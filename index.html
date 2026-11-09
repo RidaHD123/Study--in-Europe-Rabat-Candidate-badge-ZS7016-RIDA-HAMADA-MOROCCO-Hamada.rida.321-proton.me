@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rida Hamada – Application to Centria UAS – Smart Devices and Solutions 2027</title>
+<meta name="description" content="Application of Rida Hamada (ZS7016) to Centria University of Applied Sciences, B.Eng. IT, Smart Devices and Solutions.">
+<style>
+:root{--bg:#04101f;--bg2:#0a2342;--line:#1c4a7a;--cy:#3fe0f0;--am:#ffb81c;--tx:#eaf4ff;--mu:#9db8d6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#0d3a6b 0,var(--bg) 60%) fixed;color:var(--tx);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Arabic",Arial,sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;opacity:.14;pointer-events:none;mask-image:radial-gradient(circle at 50% 30%,#000,transparent 75%);-webkit-mask-image:radial-gradient(circle at 50% 30%,#000,transparent 75%)}
+a{color:var(--cy)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--am);outline-offset:3px}
+.wrap{position:relative;max-width:1000px;margin:0 auto;padding:0 20px 60px}
+.top{background:#020a15;border-bottom:2px solid var(--cy);padding:12px 20px;text-align:center;font-size:15px}
+.top b{color:var(--am);letter-spacing:.04em}
+.top .u{display:block;font-size:20px;font-weight:700}
+.top .s{color:var(--mu)}
+.langs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0 6px}
+.langs button{font:inherit;font-weight:600;font-size:15px;padding:9px 18px;border-radius:999px;border:2px solid var(--line);background:#071a33;color:var(--tx);cursor:pointer}
+.langs button[aria-pressed=true]{background:var(--cy);color:#02202b;border-color:var(--cy)}
+.hero{text-align:center;padding:26px 0 10px}
+.kick{color:var(--am);font-weight:600}
+h1{font-size:clamp(30px,6vw,56px);line-height:1.12;margin:.3em 0;background:linear-gradient(90deg,#fff,var(--cy));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mu);font-size:19px;max-width:680px;margin:0 auto}
+.intro{max-width:680px;margin:20px auto 0}
+.rt{text-align:center;margin:40px 0 0;font-size:22px;font-weight:700}
+.ring{position:relative;width:min(94vw,470px);aspect-ratio:1;margin:10px auto 30px}
+.ring:before,.ring:after{content:"";position:absolute;border-radius:50%;border:2px dashed var(--line)}
+.ring:before{inset:12%;animation:spin 60s linear infinite}
+.ring:after{inset:2%;border-style:solid;border-color:#12365c}
+@keyframes spin{to{transform:rotate(360deg)}}
+.core{position:absolute;inset:34%;border-radius:50%;background:radial-gradient(circle,#0f4a85,#06213f);border:3px solid var(--cy);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 0 40px #3fe0f055;line-height:1.2;font-size:clamp(11px,3vw,14px)}
+.core b{font-size:clamp(16px,4.4vw,22px);color:var(--am)}
+.node{position:absolute;width:25%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;color:var(--tx);background:#071f3c;border:3px solid var(--cy);font-size:clamp(11px,2.9vw,14px);font-weight:700;line-height:1.15;padding:4px;transition:transform .2s,background .2s}
+.node span{font-size:clamp(20px,5.5vw,30px);line-height:1.1}
+.node:hover,.node:focus-visible{background:var(--cy);color:#02202b;transform:translate(-50%,-50%) scale(1.1)}
+section{margin:44px 0}
+h2{font-size:26px;margin:0 0 14px;color:var(--cy)}
+ul.ach{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.ach li{padding:14px 18px;border-inline-start:4px solid var(--am);background:#071a33;border-radius:12px}
+.stats{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.stat{width:190px;aspect-ratio:1;border-radius:50%;border:3px solid var(--am);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;background:#071a33;line-height:1.3}
+.stat b{font-size:34px;color:var(--am);line-height:1.1}
+.box{background:#071a33;border:1px solid var(--line);border-radius:18px;padding:20px 24px}
+.letter h3{color:var(--cy);margin:1.4em 0 .4em}.letter p,.letter li{max-width:75ch}.letter{line-height:1.75}
+.encl{padding-inline-start:22px}
+.btn{display:inline-block;margin-top:12px;padding:12px 26px;border-radius:999px;background:var(--am);color:#2a1d00;font-weight:700;text-decoration:none}
+footer{text-align:center;color:var(--mu);border-top:1px solid var(--line);padding-top:24px}
+footer b{color:var(--tx)}
+[dir=rtl] .stat,[dir=rtl] .node{direction:rtl}
+@media (prefers-reduced-motion:reduce){.ring:before{animation:none}html{scroll-behavior:auto}.node{transition:none}}
+</style>
+</head>
+<body>
+<div class="top">
+<span class="u">Centria University of Applied Sciences</span>
+<span class="s">A higher education institution</span><br>
+<span><span data-i="evl"></span>: <b>Study in Europe Rabat</b></span> &nbsp;|&nbsp;
+<span><span data-i="bdl"></span>: <b>ZS7016</b> &ndash; RIDA HAMADA &ndash; MOROCCO &ndash; <a href="mailto:Hamada.rida.321@proton.me">Hamada.rida.321@proton.me</a></span>
+</div>
+<div class="wrap">
+<nav class="langs" aria-label="Language" id="langs"></nav>
+<header class="hero">
+<div class="kick" data-i="kick"></div>
+<h1 data-i="h1"></h1>
+<p class="lead" data-i="lead"></p>
+<p class="intro" data-i="intro"></p>
+</header>
+
+<div class="rt" data-i="rt"></div>
+<div class="ring" id="ring">
+<div class="core"><b>ZS7016</b>RIDA HAMADA<br>MOROCCO</div>
+</div>
+
+<section>
+<h2 data-i="at"></h2>
+<ul class="ach"><li data-i="a1"></li><li data-i="a2"></li><li data-i="a3"></li><li data-i="a4"></li></ul>
+</section>
+
+<section>
+<h2 data-i="pt"></h2>
+<div class="stats">
+<div class="stat"><b>0</b><span data-i="p1"></span></div>
+<div class="stat"><b>15–30</b><span data-i="p2"></span></div>
+<div class="stat"><b>240</b><span data-i="p3"></span></div>
+</div>
+</section>
+
+<section>
+<h2 data-i="wt"></h2>
+<div class="box" data-i="w"></div>
+</section>
+
+<section id="letter">
+<h2 data-i="lt"></h2>
+<div class="box"><p id="lnote" style="color:var(--am)"></p><div id="lbody" class="letter"></div>
+<a class="btn" href="https://drive.google.com/file/d/1Xvm3dc4SAlpZl2O5bSrBT_5z31p-Zu4X/view?usp=drive_link" target="_blank" rel="noopener" data-i="ol"></a></div>
+</section>
+
+<section id="encl">
+<h2 data-i="et"></h2>
+<div class="box">
+<ul class="encl">
+<li>Diplôme du Baccalauréat, Sciences Physiques</li>
+<li>Diplôme de Technicien Spécialisé, Électromécanique</li>
+<li>IHK-FOSA Recognition, Elektroniker für Automatisierungstechnik + Qualifizierungsplan</li>
+<li>Work certificates: Actemium / GMCE II, Univers Acier, SE Solution</li>
+<li>Certificates: Cisco Cybersecurity, Microsoft Azure-900, IAEA Information and Computer Security, UNCTAD IMTS</li>
+<li>CV</li>
+</ul>
+<a class="btn" href="https://drive.google.com/drive/folders/1oXw4P9hMINmI_QeQ2DOA4p6F0yhshl_u?usp=drive_link" target="_blank" rel="noopener" data-i="dl"></a>
+</div>
+</section>
+
+<footer>
+<p data-i="cl"></p>
+<p><b>Rida Hamada</b> &ndash; Safi, Morocco<br><a href="mailto:Hamada.rida.321@proton.me">Hamada.rida.321@proton.me</a></p>
+</footer>
+</div>
+
+<script>
+window.LETTER=window.LETTER||{};
+window.LETTER.en=`
+<p><b>Motivaatiokirje – Motivation Letter</b><br>Rida Hamada<br>Programme: Bachelor of Engineering, Information Technology – Smart Devices and Solutions (SDS)<br>Centria University of Applied Sciences, Kokkola<br>For: Joint Application / Rolling Admission 2027</p>
+<p>Dear Admissions Team and International Affairs Team at Centria University of Applied Sciences,</p>
+<p>My name is Rida Hamada. I am a Moroccan Electronics Technician for Automation Technology, recognized by IHK-FOSA in Germany, and I am writing to apply for the Bachelor of Engineering in Information Technology, specialization Smart Devices and Solutions, starting in autumn 2027.</p>
+<p>I met your delegation in person in Morocco, and that meeting is the reason for this letter.</p>
+<p>On 08 November 2026, at Hotel Marriott Rabat, I attended the Centria presentation in Morocco. I had the opportunity to listen to Ms. Francesca Cucinotta, Director, International Affairs at Centria University of Applied Sciences, and her colleagues. I would like to thank them sincerely for the clear, honest, and very practical information they gave us about studying in Kokkola, about tuition fees, scholarships, student life, and about what Centria really expects from international students.</p>
+<p>My badge code for that event was ZS7016.</p>
+<p>That presentation changed my plan. Before that day, I was looking at many universities. After listening to Ms. Cucinotta and her team, I understood that Centria is not a theoretical university. It is a practical university, with real projects, real laboratories, and real cooperation with companies. That is exactly what I need.</p>
+<p>I also prepared, before the event, a detailed evaluation questionnaire about my case, my qualifications, and the compatibility of my German professional recognition with the Finnish system. Ms. Cucinotta and her colleagues kindly answered my questions in Rabat. That questionnaire, with their answers, is available as part of my application file (see the Questionnaire button) and my complete professional portfolio is available through the Portfolio button.</p>
+<h3>Who I am</h3>
+<p>I am 30 years old, from Safi, Morocco. I hold a Diplôme du Baccalauréat in Sciences Physiques, a Diplôme de Technicien Spécialisé in Electromechanics from the Institute of Applied Technology in Casablanca (2020), and a German professional recognition as Elektroniker für Automatisierungstechnik from IHK-FOSA (2024), with a Qualifizierungsplan from IHK Berlin (2025).</p>
+<p>I worked as an Electrician at Actemium / GMCE II in Jorf Lasfar (11/2021 – 09/2022) on industrial projects for OCP Group, TAQA Morocco, STMicroelectronics, and others. I commissioned turbines and cogeneration plants, installed electrical systems up to 6.6 kV, calibrated actuators and analyzers, worked with HART protocol, tested medium-voltage switchgear (1–36 kV), and integrated SCADA systems. Before that, I worked as a Control Room Technician at Univers Acier, managing DCS and HMI, and as an Industrial Marking Technician at SE Solution.</p>
+<p>In parallel, I completed continuous training in cybersecurity (Cisco Networking Academy, 2025), Microsoft Azure-900, Information and Computer Security (IAEA, 2025), and International Merchandise Trade Statistics (UNCTAD / UNSD / WTO, 2025).</p>
+<p>My Baccalaureate grade in Sciences Physiques is below 12/20. I state this honestly, because I do not want to apply through certificate-based selection where grades decide. I want to apply through the UAS International Exam, because that exam measures what I can do today, not what my grade was in 2016.</p>
+<p>After five years of industrial work, continuous training, and German professional recognition, my technical level today is much stronger than my school grade. I have lived the concepts of sensors, controllers, automation, and process monitoring in a real plant, not only in a classroom.</p>
+<h3>My Professional Recognition Plan: EU System vs. Finnish System</h3>
+<p>This is the central part of my application, and it was the main subject of the questionnaire I discussed with Ms. Cucinotta and her colleagues in Rabat.</p>
+<p>I have studied carefully how my qualifications are evaluated in the European Union system, and how they are evaluated in the Finnish system. I want to present this clearly, because I do not want my file to be misunderstood.</p>
+<p>In the European Union system, there are three different types of recognition:</p>
+<ul>
+<li><b>Academic Recognition</b> – decided by the university itself. It gives the right to enter a study programme and to have prior learning recognized.</li>
+<li><b>Professional Recognition</b> – decided by the state, for regulated professions, under EU Directive 2005/36/EC. In Finland, this is decided by OPH, the Finnish National Agency for Education, which is also the Finnish ENIC-NARIC centre.</li>
+<li><b>Labour Market Recognition</b> – decided by employers, based on trust in the qualification and the real experience.</li>
+</ul>
+<p>In the Finnish system, the same distinction applies, but with one important specificity: In Finland, higher education institutions themselves are responsible for academic recognition. OPH does not decide admission. OPH decides professional recognition for regulated professions, after residence in Finland. This is why I am applying first to Centria, and not to OPH.</p>
+<h3>My qualifications, evaluated in both systems</h3>
+<p><b>1. Diplôme du Baccalauréat, Sciences Physiques – EQF 4.</b> In the EU system, under the Lisbon Recognition Convention, this is a secondary school qualification giving access to higher education. In Finland, it is accepted as a right to apply, but my grade below 12/20 does not qualify me for certificate-based selection. Therefore, I apply via the UAS Exam. It gives 0 ECTS, because it is an access qualification, not a university qualification.</p>
+<p><b>2. Diplôme de Technicien Spécialisé, Électromécanique – EQF 5, Bac+2.</b> In the EU system, this is a Short Cycle higher vocational qualification. In Finland, it is comparable to partial studies in a University of Applied Sciences, but it is not a Bachelor degree. It gives 0 ECTS automatically. However, under Centria's principles of Recognition of Prior Learning (RPL / AHOT), it can give 10–20 ECTS after enrolment, if I demonstrate competences matching the degree in electronics, electromechanics, and automation.</p>
+<p><b>3. IHK-FOSA, Elektroniker für Automatisierungstechnik – EQF 4 / DQR 4.</b> This is my strongest professional qualification. In the German system, it is registered in the DQR at level 4, corresponding to 3.5 years of German dual vocational training, with approximately 4,200 hours of theoretical and practical training, certified by BIBB and IHK. In the EU system, this qualification is recognized as a professional qualification across the EU, but it is not automatically converted into a Finnish qualification. It does not give ECTS automatically, because ECTS is for universities only, and ECVET is for vocational training. In the Finnish system, this qualification must be evaluated in two steps:</p>
+<ul>
+<li><b>Academic step:</b> Centria decides, through RPL, how many ECTS it can recognize. In my case, I expect 15–30 ECTS, especially for practical training and embedded systems, if I present a strong RPL portfolio with work certificates, IHK documents, and a competence demonstration.</li>
+<li><b>Professional step:</b> OPH decides, after I become a resident in Finland, whether my profession is regulated in Finland and whether I need a formal recognition decision to work in it. In IT and automation, most positions are not regulated, and the employer decides. Therefore, my Finnish degree from Centria, combined with Finnish work experience, will be my real professional recognition in Finland.</li>
+</ul>
+<p><b>4. Qualifizierungsplan, IHK Berlin, 2025 – EQF 4.</b> This document is very important for my case. It shows that I was evaluated by the German system, and that I identified exactly what I need to complete: Digitalisierung, Datenschutz, Informationssicherheit. These are exactly the subjects that Smart Devices and Solutions teaches at Centria: digitalisation, data protection, and information security. This proves that Centria is the natural continuation of my German qualification, not a repetition of it.</p>
+<p><b>5. Cisco, Azure-900, IAEA, UNCTAD Certificates – No EQF level, 0 ECTS.</b> In both systems, these are continuous training certificates, not state qualifications. They do not give ECTS automatically. However, they support RPL for basic security and cloud modules, and they prove my continuous learning in cybersecurity, cloud, and data security.</p>
+<p><b>My conclusion on recognition:</b></p>
+<ul>
+<li>At entry: 0 ECTS recognized automatically</li>
+<li>After enrolment, through RPL: 15–30 ECTS potentially recognized, which is one full semester</li>
+<li>After graduation: B.Eng. Information Technology, 240 ECTS, EQF 6, fully recognized across Europe</li>
+</ul>
+<p>This is why I need Centria. Germany gave me a profession. Finland, through Centria, will give me a degree and a profession. The IHK qualification alone keeps me as a technician. A Bachelor degree from Centria will make me an engineer, with a Finnish degree, Finnish experience, and a European qualification at EQF 6.</p>
+<h3>Why I choose Finland today, and not Germany</h3>
+<p>I want to state this clearly, because it was also part of my questionnaire in Rabat.</p>
+<p>I am no longer interested in continuing my learning path with Germany. I respect the German system very much, and I am grateful for the recognition I received from IHK-FOSA. But today, I want Finland.</p>
+<p>I want Finland because of the quality of education in Northern Europe, because of the practical, project-based learning at Centria, because of the welcoming culture I experienced from your delegation in Morocco, and because of the open mindset of Centria towards Moroccan students.</p>
+<p>In Rabat, I did not feel that I was treated as a number. I felt that I was treated as a future student, with real questions, and with a real project. Ms. Cucinotta and her colleagues answered honestly, even when the answers were difficult, about fees, about language, about work, about life in Kokkola. That honesty gave me trust.</p>
+<p>I welcome any facilitation you can offer to help me continue my education in Finland. I do not ask for an exception to the rules. I ask only for a fair evaluation, through the UAS Exam, and for the opportunity to prove my value through my studies.</p>
+<p>I have a very, very big ambition to continue my education and my creativity at this strong university in Northern Europe. I do not want to stop at being a technician. I want to become an engineer who designs intelligent systems, who works in international teams, and who contributes to Finnish industry and to research.</p>
+<h3>Why Smart Devices and Solutions, and why Centria?</h3>
+<p>I chose Smart Devices and Solutions because it is the only programme that connects what I already know with what I need to learn.</p>
+<p><b>What I know:</b> sensors, actuators, PLCs, DCS, HMI, SCADA, industrial networks, electrical safety, and process optimization.</p>
+<p><b>What I want to learn at Centria:</b> IoT architectures, embedded systems, edge computing, data analytics, data visualization, applied AI, and how to design, prototype, and integrate intelligent connected systems in real industrial and digital environments.</p>
+<p>I was particularly convinced by three things I heard in Rabat and on your website:</p>
+<ul>
+<li><b>Centria IT Lab</b> – a shared environment where students, teachers, researchers, and companies work together on real software, smart systems, cybersecurity, and cloud projects. This is where I want to learn.</li>
+<li><b>Project-based learning</b> – students work in multidisciplinary teams on real customer problems, using agile methods and industry tools. This is exactly how I worked at Actemium.</li>
+<li><b>International environment</b> – around 130 partner universities, students from around 40 countries, and the possibility of an exchange semester or practical training abroad through Erasmus+.</li>
+</ul>
+<p>I do not want a purely theoretical degree. I want a degree that makes me ready to work as an IoT Engineer, Embedded Systems Developer, Smart Systems Engineer, or AI and Data Solutions Developer.</p>
+<h3>What I will bring to Centria</h3>
+<p>I will not arrive as a student who has only studied theory. I will arrive with industrial experience that most bachelor students do not have.</p>
+<p>During my studies, I would like to develop a research project in the field of industrial safety and embedded systems, under the supervision of your teachers, and in full compliance with EU data protection rules (GDPR) and responsible AI principles. My long-term project, which I call IMPERIUM RH, is not a commercial product. I see it as an academic research project: a specialized, open tool for training in industrial instrumentation and workplace safety, developed in your laboratory, with a strong team, for research and education.</p>
+<p>I am ready to work in multidisciplinary teams, to share my industrial experience with younger students, and to contribute to projects that connect Centria with real companies.</p>
+<h3>My understanding of fees, scholarships, and residence</h3>
+<p>I have read your tuition and scholarship information carefully, including the information given in Rabat. I understand that:</p>
+<ul>
+<li>The tuition fee for Bachelor programmes for non-EU/EEA students is 9,500 EUR per academic year for students starting in 2027/2028.</li>
+<li>The fee must be paid in full via Flywire, and it cannot be paid in instalments for the first year.</li>
+<li>The Early Bird scholarship of -25% is available if I accept the conditional offer and pay within 14 days of notification.</li>
+<li>The Progress scholarship of -20% is available if I complete 60 ECTS per year and apply between 1–31 October.</li>
+<li>The Academic Performance scholarship of -100% is awarded by a selection committee, once per degree, to students with excellent progress and GPA.</li>
+<li>The Finnish Language scholarship of 2,000 EUR is available if I complete YKI Finnish at B1.1 level during my studies at Centria.</li>
+</ul>
+<p>I also understand that for a Finnish residence permit for studies, I must prove sufficient funds for living costs, currently 800 EUR per month, 9,600 EUR for one year, in my own bank account, in addition to tuition, plus private health insurance.</p>
+<p>I am aware of these requirements and I am working on securing the funding to meet them. My goal is to complete 60 ECTS every year, to learn Finnish to B1.1 level, and to apply for the progress and performance scholarships through academic excellence, not through an exception.</p>
+<p>I am currently unemployed and my budget is limited. I do not ask for an exception to the tuition fee rules, because I understand that the exemption list is closed and based on residence permits and EU/EEA citizenship. I ask only for the opportunity to be evaluated fairly through the UAS Exam, and to prove my value through my studies at Centria.</p>
+<h3>My future plan in Finland</h3>
+<p>My goal after graduation is to work in Finland in the field of IoT, automation, and smart systems, and to contribute to Finnish industry. My plan is:</p>
+<ul>
+<li>Complete 240 ECTS in Smart Devices and Solutions</li>
+<li>Complete practical training and my 15 ECTS thesis in a Finnish company</li>
+<li>Apply for Recognition of Prior Learning (RPL / AHOT) for my industrial experience and IHK qualification, in accordance with Centria's principles of recognition of prior learning</li>
+<li>Learn Finnish, participate in integration activities, and apply for Erasmus+ exchange or practical training abroad during my studies</li>
+<li>After graduation, apply for a residence permit to seek work in Finland, in accordance with Finnish law</li>
+</ul>
+<p>I am ready to stay in Kokkola, to study full-time, to complete 60 ECTS per year, and to integrate into Finnish academic and professional life.</p>
+<h3>Closing</h3>
+<p>Thank you again to Ms. Francesca Cucinotta and her colleagues for coming to Morocco and for giving us honest and detailed information at Hotel Marriott Rabat on 08 November 2026. Thank you for the welcoming culture, for the open mindset towards Moroccan students, and for the quality of education that Centria represents in Northern Europe. That meeting gave me the clarity to choose Centria, and to choose Finland today.</p>
+<p>I have a very big ambition to continue my education and my creativity at your university. I respectfully ask you to consider my application for the Bachelor of Engineering in Information Technology, Smart Devices and Solutions, through the UAS International Exam.</p>
+<p>I am available for any additional document, interview, or test you may require.</p>
+<p>Yours sincerely,<br><b>Rida Hamada</b><br>Safi, Morocco<br>Email: Hamada.rida.321@proton.me</p>
+`;
+
+</script>
+<script>
+window.LETTER=window.LETTER||{};
+window.LETTER.fi=`
+<p><b>Motivaatiokirje</b><br>Rida Hamada<br>Koulutusohjelma: tietotekniikan insinööri (AMK) – Smart Devices and Solutions (SDS)<br>Centria-ammattikorkeakoulu, Kokkola<br>Koskee: yhteishaku / jatkuva haku 2027</p>
+<p>Hyvä Centrian opiskelijavalinta- ja kansainvälisten asioiden tiimi,</p>
+<p>Nimeni on Rida Hamada. Olen marokkolainen automaatiotekniikan elektroniikka-asentaja, jonka pätevyyden IHK-FOSA on tunnustanut Saksassa. Haen tietotekniikan insinööriopintoihin (Bachelor of Engineering), Smart Devices and Solutions -suuntautumiseen, jotka alkavat syksyllä 2027.</p>
+<p>Tapasin valtuuskuntanne henkilökohtaisesti Marokossa, ja tuo tapaaminen on tämän kirjeen syy.</p>
+<p>8. marraskuuta 2026 osallistuin Hotel Marriott Rabatissa Centrian esitykseen Marokossa. Sain kuunnella Francesca Cucinottaa, Centrian kansainvälisten asioiden johtajaa, ja hänen kollegoitaan. Haluan kiittää heitä vilpittömästi selkeästä, rehellisestä ja erittäin käytännöllisestä tiedosta, jota he antoivat opiskelusta Kokkolassa, lukukausimaksuista, stipendeistä, opiskelijaelämästä ja siitä, mitä Centria todella odottaa kansainvälisiltä opiskelijoilta.</p>
+<p>Tapahtuman osallistujatunnukseni oli ZS7016.</p>
+<p>Tuo esitys muutti suunnitelmani. Ennen sitä tarkastelin monia yliopistoja. Kuunneltuani rouva Cucinottaa ja hänen tiimiään ymmärsin, ettei Centria ole teoreettinen korkeakoulu. Se on käytännönläheinen korkeakoulu, jossa on oikeita projekteja, oikeita laboratorioita ja todellista yhteistyötä yritysten kanssa. Juuri sitä tarvitsen.</p>
+<p>Valmistelin myös ennen tapahtumaa yksityiskohtaisen arviointikyselyn omasta tilanteestani, pätevyyksistäni ja saksalaisen ammatillisen tunnustamiseni yhteensopivuudesta Suomen järjestelmän kanssa. Rouva Cucinotta ja hänen kollegansa vastasivat ystävällisesti kysymyksiini Rabatissa. Kysely vastauksineen kuuluu hakemusaineistooni (katso Kysely-painike), ja täydellinen ammatillinen portfolioni löytyy Portfolio-painikkeen takaa.</p>
+<h3>Kuka olen</h3>
+<p>Olen 30-vuotias ja kotoisin Safista, Marokosta. Minulla on Diplôme du Baccalauréat (fysikaaliset tieteet), Diplôme de Technicien Spécialisé -tutkinto sähkömekaniikassa Institute of Applied Technologysta Casablancasta (2020) sekä saksalainen ammatillinen tunnustus Elektroniker für Automatisierungstechnik, IHK-FOSA (2024), ja IHK Berliinin Qualifizierungsplan (2025).</p>
+<p>Työskentelin sähköasentajana Actemium / GMCE II:ssa Jorf Lasfarissa (11/2021 – 09/2022) teollisuushankkeissa muun muassa OCP Groupille, TAQA Moroccolle ja STMicroelectronicsille. Otin käyttöön turbiineja ja yhteistuotantovoimaloita, asensin sähköjärjestelmiä 6,6 kV:iin asti, kalibroin toimilaitteita ja analysaattoreita, työskentelin HART-protokollan kanssa, testasin keskijännitekytkinlaitteita (1–36 kV) ja integroin SCADA-järjestelmiä. Sitä ennen työskentelin valvomoteknikkona Univers Acierilla DCS- ja HMI-järjestelmien parissa sekä teollisuuden merkintäjärjestelmien asentajana SE Solutionilla.</p>
+<p>Samanaikaisesti olen suorittanut jatkuvaa koulutusta: kyberturvallisuus (Cisco Networking Academy, 2025), Microsoft Azure-900, tieto- ja tietokoneturvallisuus (IAEA, 2025) sekä kansainvälinen tavarakaupan tilastointi (UNCTAD / UNSD / WTO, 2025).</p>
+<p>Ylioppilas- eli Baccalauréat-arvosanani fysikaalisissa tieteissä on alle 12/20. Kerron tämän rehellisesti, koska en halua hakea todistusvalinnan kautta, jossa arvosanat ratkaisevat. Haluan hakea UAS International Exam -kokeen kautta, koska koe mittaa sitä, mihin pystyn tänään, ei sitä, mikä arvosanani oli vuonna 2016.</p>
+<p>Viiden teollisuusvuoden, jatkuvan koulutuksen ja saksalaisen ammatillisen tunnustamisen jälkeen tekninen osaamiseni on nykyään paljon vahvempi kuin koulutodistukseni. Olen elänyt anturien, ohjainten, automaation ja prosessinvalvonnan käsitteet oikeassa tehtaassa, en vain luokkahuoneessa.</p>
+<h3>Ammatillisen tunnustamisen suunnitelmani: EU:n ja Suomen järjestelmä</h3>
+<p>Tämä on hakemukseni keskeisin osa, ja se oli pääaihe kyselyssä, jota kävin läpi rouva Cucinottan ja hänen kollegoidensa kanssa Rabatissa.</p>
+<p>Olen perehtynyt huolellisesti siihen, miten pätevyyteni arvioidaan Euroopan unionin järjestelmässä ja miten Suomen järjestelmässä. Haluan esittää tämän selkeästi, ettei aineistoani ymmärretä väärin.</p>
+<p>Euroopan unionin järjestelmässä on kolme erilaista tunnustamista:</p>
+<ul>
+<li><b>Akateeminen tunnustaminen</b> – korkeakoulu päättää itse. Se antaa oikeuden päästä opiskelemaan ja saada aiempi osaaminen tunnustetuksi.</li>
+<li><b>Ammatillinen tunnustaminen</b> – valtio päättää säännellyistä ammateista EU-direktiivin 2005/36/EY nojalla. Suomessa päätöksen tekee OPH eli Opetushallitus, joka on myös Suomen ENIC-NARIC-keskus.</li>
+<li><b>Työmarkkinoilla tapahtuva tunnustaminen</b> – työnantajat päättävät luottamuksen ja todellisen kokemuksen perusteella.</li>
+</ul>
+<p>Suomen järjestelmässä sama jako pätee, mutta yhdellä tärkeällä erityispiirteellä: Suomessa korkeakoulut itse vastaavat akateemisesta tunnustamisesta. OPH ei päätä opiskelijavalinnasta. OPH päättää säännellyjen ammattien ammatillisesta tunnustamisesta Suomeen muuton jälkeen. Siksi haen ensin Centriaan, en OPH:lle.</p>
+<h3>Pätevyyteni arvioituna molemmissa järjestelmissä</h3>
+<p><b>1. Diplôme du Baccalauréat, fysikaaliset tieteet – EQF 4.</b> EU-järjestelmässä Lissabonin tunnustamissopimuksen mukaan tämä on toisen asteen tutkinto, joka antaa pääsyn korkeakouluun. Suomessa se hyväksytään hakukelpoisuuden perustaksi, mutta alle 12/20 oleva arvosanani ei riitä todistusvalintaan. Siksi haen UAS-kokeen kautta. Se oikeuttaa 0 opintopisteeseen, koska se on pääsyn edellyttämä tutkinto, ei korkeakoulututkinto.</p>
+<p><b>2. Diplôme de Technicien Spécialisé, sähkömekaniikka – EQF 5, Bac+2.</b> EU-järjestelmässä tämä on lyhyen syklin korkeampi ammatillinen tutkinto. Suomessa se vastaa osittaisia ammattikorkeakouluopintoja, mutta ei ole kandidaatin tutkinto. Se ei anna automaattisesti opintopisteitä. Centrian aiemmin hankitun osaamisen tunnustamisen periaatteiden (RPL / AHOT) mukaan se voi kuitenkin tuoda 10–20 opintopistettä ilmoittautumisen jälkeen, jos osoitan tutkintoa vastaavan osaamisen elektroniikassa, sähkömekaniikassa ja automaatiossa.</p>
+<p><b>3. IHK-FOSA, Elektroniker für Automatisierungstechnik – EQF 4 / DQR 4.</b> Tämä on vahvin ammatillinen pätevyyteni. Saksan järjestelmässä se on sijoitettu DQR-tasolle 4, ja se vastaa 3,5 vuoden saksalaista kaksoisammattikoulutusta, jossa on noin 4 200 tuntia teoreettista ja käytännön koulutusta, BIBB:n ja IHK:n todentamana. EU-järjestelmässä pätevyys tunnustetaan ammatilliseksi pätevyydeksi EU:ssa, mutta sitä ei muunneta automaattisesti suomalaiseksi tutkinnoksi. Se ei anna automaattisesti opintopisteitä, koska ECTS on tarkoitettu vain korkeakouluille ja ECVET ammatilliselle koulutukselle. Suomen järjestelmässä pätevyys arvioidaan kahdessa vaiheessa:</p>
+<ul>
+<li><b>Akateeminen vaihe:</b> Centria päättää RPL:n kautta, kuinka monta opintopistettä se tunnustaa. Odotan omassa tapauksessani 15–30 opintopistettä erityisesti käytännön harjoittelusta ja sulautetuista järjestelmistä, jos esitän vahvan RPL-portfolion työtodistuksineen, IHK-asiakirjoineen ja osaamisen osoittamisineen.</li>
+<li><b>Ammatillinen vaihe:</b> OPH päättää Suomeen asettumiseni jälkeen, onko ammattini Suomessa säännelty ja tarvitsenko virallisen tunnustamispäätöksen työskennelläkseni siinä. IT- ja automaatioalalla useimmat tehtävät eivät ole säänneltyjä, ja työnantaja päättää. Siksi Centrian suomalainen tutkintoni yhdessä suomalaisen työkokemuksen kanssa on todellinen ammatillinen tunnustamiseni Suomessa.</li>
+</ul>
+<p><b>4. Qualifizierungsplan, IHK Berlin, 2025 – EQF 4.</b> Tämä asiakirja on tapaukselleni erittäin tärkeä. Se osoittaa, että Saksan järjestelmä on arvioinut minut ja että olen tunnistanut tarkalleen, mitä minun on vielä suoritettava: Digitalisierung, Datenschutz, Informationssicherheit. Juuri näitä aiheita Smart Devices and Solutions Centriassa opettaa: digitalisaatiota, tietosuojaa ja tietoturvaa. Tämä osoittaa, että Centria on saksalaisen pätevyyteni luonnollinen jatke, ei sen toisto.</p>
+<p><b>5. Cisco-, Azure-900-, IAEA- ja UNCTAD-todistukset – ei EQF-tasoa, 0 op.</b> Molemmissa järjestelmissä nämä ovat jatkokoulutustodistuksia, eivät valtion tutkintoja. Ne eivät anna automaattisesti opintopisteitä. Ne tukevat kuitenkin RPL:ää tietoturvan ja pilvipalveluiden perusopinnoissa ja osoittavat jatkuvaa oppimistani kyberturvallisuudessa, pilvipalveluissa ja tietoturvassa.</p>
+<p><b>Johtopäätökseni tunnustamisesta:</b></p>
+<ul>
+<li>Opintojen alussa: 0 opintopistettä tunnustetaan automaattisesti</li>
+<li>Ilmoittautumisen jälkeen RPL:n kautta: mahdollisesti 15–30 opintopistettä tunnustetaan, mikä on yksi kokonainen lukukausi</li>
+<li>Valmistumisen jälkeen: insinööri (AMK), tietotekniikka, 240 op, EQF 6, täysin tunnustettu kaikkialla Euroopassa</li>
+</ul>
+<p>Siksi tarvitsen Centriaa. Saksa antoi minulle ammatin. Suomi Centrian kautta antaa minulle tutkinnon ja ammatin. IHK-pätevyys yksin pitää minut teknikkona. Centrian kandidaatin tutkinto tekee minusta insinöörin, jolla on suomalainen tutkinto, suomalainen kokemus ja eurooppalainen EQF 6 -pätevyys.</p>
+<h3>Miksi valitsen tänään Suomen enkä Saksaa</h3>
+<p>Haluan sanoa tämän selkeästi, koska se kuului myös Rabatin kyselyyni.</p>
+<p>En ole enää kiinnostunut jatkamaan oppimispolkuani Saksan kautta. Kunnioitan Saksan järjestelmää suuresti ja olen kiitollinen IHK-FOSA:lta saamastani tunnustuksesta. Mutta tänään haluan Suomeen.</p>
+<p>Haluan Suomeen, koska Pohjois-Euroopan koulutus on laadukasta, Centrian käytännönläheinen projektioppiminen, valtuuskuntanne Marokossa osoittama lämmin kulttuuri ja Centrian avoin asenne marokkolaisia opiskelijoita kohtaan.</p>
+<p>Rabatissa en tuntenut olevani numero. Tunsin, että minua kohdeltiin tulevana opiskelijana, jolla on aidot kysymykset ja aito hanke. Rouva Cucinotta ja hänen kollegansa vastasivat rehellisesti, vaikka vastaukset olivat vaikeita: maksuista, kielestä, työstä ja elämästä Kokkolassa. Tuo rehellisyys herätti luottamukseni.</p>
+<p>Otan kiitollisena vastaan kaiken tuen, jonka voitte tarjota opintojeni jatkamiseksi Suomessa. En pyydä poikkeusta sääntöihin. Pyydän vain oikeudenmukaista arviointia UAS-kokeen kautta ja mahdollisuutta osoittaa arvoni opintojeni aikana.</p>
+<p>Minulla on erittäin suuri kunnianhimo jatkaa opintojani ja luovuuttani tässä vahvassa pohjoiseurooppalaisessa korkeakoulussa. En halua jäädä teknikoksi. Haluan tulla insinööriksi, joka suunnittelee älykkäitä järjestelmiä, työskentelee kansainvälisissä tiimeissä ja edistää suomalaista teollisuutta ja tutkimusta.</p>
+<h3>Miksi Smart Devices and Solutions ja miksi Centria?</h3>
+<p>Valitsin Smart Devices and Solutions -ohjelman, koska se on ainoa, joka yhdistää sen, minkä jo osaan, siihen, mitä minun on opittava.</p>
+<p><b>Mitä osaan:</b> anturit, toimilaitteet, PLC:t, DCS, HMI, SCADA, teollisuusverkot, sähköturvallisuus ja prosessien optimointi.</p>
+<p><b>Mitä haluan oppia Centriassa:</b> IoT-arkkitehtuurit, sulautetut järjestelmät, reunalaskenta, data-analytiikka, datan visualisointi, sovellettu tekoäly sekä älykkäiden yhdistettyjen järjestelmien suunnittelu, prototypointi ja integrointi todellisissa teollisissa ja digitaalisissa ympäristöissä.</p>
+<p>Minut vakuuttivat erityisesti kolme asiaa, jotka kuulin Rabatissa ja verkkosivuiltanne:</p>
+<ul>
+<li><b>Centria IT Lab</b> – yhteinen ympäristö, jossa opiskelijat, opettajat, tutkijat ja yritykset tekevät yhdessä oikeita ohjelmisto-, älyjärjestelmä-, kyberturvallisuus- ja pilvihankkeita. Siellä haluan oppia.</li>
+<li><b>Projektioppiminen</b> – opiskelijat työskentelevät monialaisissa tiimeissä oikeiden asiakasongelmien parissa ketterillä menetelmillä ja alan työkaluilla. Juuri näin työskentelin Actemiumilla.</li>
+<li><b>Kansainvälinen ympäristö</b> – noin 130 kumppanikorkeakoulua, opiskelijoita noin 40 maasta sekä mahdollisuus vaihtolukukauteen tai harjoitteluun ulkomailla Erasmus+:n kautta.</li>
+</ul>
+<p>En halua puhtaan teoreettista tutkintoa. Haluan tutkinnon, jonka jälkeen voin työskennellä IoT-insinöörinä, sulautettujen järjestelmien kehittäjänä, älyjärjestelmien insinöörinä tai tekoäly- ja dataratkaisujen kehittäjänä.</p>
+<h3>Mitä tuon Centriaan</h3>
+<p>En saavu opiskelijana, joka on vain opiskellut teoriaa. Saavun teollisella kokemuksella, jota useimmilla kandidaattiopiskelijoilla ei ole.</p>
+<p>Opintojeni aikana haluaisin kehittää tutkimushankkeen teollisuusturvallisuuden ja sulautettujen järjestelmien alalla opettajienne ohjauksessa ja EU:n tietosuojasääntöjen (GDPR) sekä vastuullisen tekoälyn periaatteiden mukaisesti. Pitkän aikavälin hankkeeni, jota kutsun nimellä IMPERIUM RH, ei ole kaupallinen tuote. Näen sen akateemisena tutkimushankkeena: erikoistuneena, avoimena työkaluna teollisuuden instrumentoinnin ja työturvallisuuden koulutukseen, kehitettynä laboratoriossanne vahvan tiimin kanssa tutkimusta ja opetusta varten.</p>
+<p>Olen valmis työskentelemään monialaisissa tiimeissä, jakamaan teollista kokemustani nuoremmille opiskelijoille ja osallistumaan hankkeisiin, jotka yhdistävät Centrian todellisiin yrityksiin.</p>
+<h3>Käsitykseni maksuista, stipendeistä ja oleskeluluvasta</h3>
+<p>Olen lukenut huolellisesti lukukausimaksu- ja stipendiotietonne, myös Rabatissa annetut tiedot. Ymmärrän, että:</p>
+<ul>
+<li>EU/ETA-maiden ulkopuolisten opiskelijoiden lukukausimaksu kandidaattiohjelmissa on 9 500 euroa lukuvuodessa vuosina 2027/2028 aloittaville.</li>
+<li>Maksu on suoritettava kokonaisuudessaan Flywiren kautta, eikä sitä voi maksaa erissä ensimmäisenä vuonna.</li>
+<li>Early Bird -stipendi (–25 %) on saatavilla, jos hyväksyn ehdollisen paikan ja maksan 14 päivän kuluessa ilmoituksesta.</li>
+<li>Progress-stipendi (–20 %) on saatavilla, jos suoritan 60 op vuodessa ja haen 1.–31. lokakuuta.</li>
+<li>Academic Performance -stipendin (–100 %) myöntää valintalautakunta kerran tutkintoa kohden opiskelijoille, joiden eteneminen ja keskiarvo ovat erinomaiset.</li>
+<li>Suomen kielen stipendi 2 000 euroa on saatavilla, jos suoritan YKI-kielitutkinnon suomen kielessä tasolla B1.1 Centrian opintojeni aikana.</li>
+</ul>
+<p>Ymmärrän myös, että opiskelijan oleskelulupaa varten minun on osoitettava riittävät varat elinkustannuksiin, tällä hetkellä 800 euroa kuukaudessa eli 9 600 euroa vuodessa omalla pankkitililläni lukukausimaksun lisäksi, sekä yksityinen sairausvakuutus.</p>
+<p>Tiedän nämä vaatimukset ja työskentelen rahoituksen järjestämiseksi. Tavoitteeni on suorittaa 60 op joka vuosi, oppia suomea tasolle B1.1 ja hakea Progress- ja Performance-stipendejä akateemisella ansiolla, en poikkeuksella.</p>
+<p>Olen tällä hetkellä työtön ja budjettini on rajallinen. En pyydä poikkeusta lukukausimaksusääntöihin, koska ymmärrän, että vapautusluettelo on suljettu ja perustuu oleskelulupiin sekä EU/ETA-kansalaisuuteen. Pyydän vain mahdollisuutta tulla arvioiduksi oikeudenmukaisesti UAS-kokeen kautta ja osoittaa arvoni opinnoissani Centriassa.</p>
+<h3>Tulevaisuudensuunnitelmani Suomessa</h3>
+<p>Tavoitteeni valmistumisen jälkeen on työskennellä Suomessa IoT:n, automaation ja älyjärjestelmien alalla ja edistää suomalaista teollisuutta. Suunnitelmani:</p>
+<ul>
+<li>Suorittaa 240 op Smart Devices and Solutions -ohjelmassa</li>
+<li>Suorittaa harjoittelu ja 15 op:n opinnäytetyö suomalaisessa yrityksessä</li>
+<li>Hakea aiemmin hankitun osaamisen tunnustamista (RPL / AHOT) teollisesta kokemuksestani ja IHK-pätevyydestäni Centrian periaatteiden mukaisesti</li>
+<li>Oppia suomea, osallistua kotoutumistoimintaan ja hakea Erasmus+-vaihtoa tai harjoittelua ulkomailla opintojeni aikana</li>
+<li>Valmistumisen jälkeen hakea oleskelulupaa työnhakua varten Suomessa Suomen lain mukaisesti</li>
+</ul>
+<p>Olen valmis asumaan Kokkolassa, opiskelemaan kokopäiväisesti, suorittamaan 60 op vuodessa ja integroitumaan suomalaiseen akateemiseen ja ammatilliseen elämään.</p>
+<h3>Lopuksi</h3>
+<p>Kiitän vielä kerran rouva Francesca Cucinottaa ja hänen kollegoitaan siitä, että tulitte Marokkoon ja annoitte meille rehellistä ja yksityiskohtaista tietoa Hotel Marriott Rabatissa 8. marraskuuta 2026. Kiitos lämpimästä kulttuurista, avoimesta asenteesta marokkolaisia opiskelijoita kohtaan ja koulutuksen laadusta, jota Centria edustaa Pohjois-Euroopassa. Tuo tapaaminen antoi minulle selkeyden valita Centria ja valita tänään Suomi.</p>
+<p>Minulla on erittäin suuri kunnianhimo jatkaa opintojani ja luovuuttani korkeakoulussanne. Pyydän kunnioittavasti, että käsittelette hakemukseni tietotekniikan insinööriopintoihin, Smart Devices and Solutions, UAS International Exam -kokeen kautta.</p>
+<p>Olen käytettävissä kaikkien lisäasiakirjojen, haastattelujen tai kokeiden osalta.</p>
+<p>Kunnioittavasti,<br><b>Rida Hamada</b><br>Safi, Marokko<br>Sähköposti: Hamada.rida.321@proton.me</p>
+`;
+
+</script>
+<script>
+window.LETTER=window.LETTER||{};
+window.LETTER.ar=`
+<p><b>رسالة الدافع – Motivaatiokirje</b><br>رضا حمادة<br>البرنامج: بكالوريوس الهندسة في تكنولوجيا المعلومات – Smart Devices and Solutions (SDS)<br>جامعة Centria للعلوم التطبيقية، كوكولا<br>بخصوص: الطلب المشترك / القبول المستمر 2027</p>
+<p>السادة فريق القبول وفريق الشؤون الدولية في جامعة Centria للعلوم التطبيقية المحترمين،</p>
+<p>اسمي رضا حمادة. أنا تقني إلكترونيات مغربي في تقنية الأتمتة، معترف بي من IHK-FOSA في ألمانيا، وأكتب لأتقدم بطلب الالتحاق ببكالوريوس الهندسة في تكنولوجيا المعلومات، تخصص Smart Devices and Solutions، ابتداءً من خريف 2027.</p>
+<p>التقيت بوفدكم شخصياً في المغرب، وذلك اللقاء هو سبب هذه الرسالة.</p>
+<p>في 8 نوفمبر 2026، في فندق ماريوت بالرباط، حضرت عرض Centria في المغرب. أتيحت لي فرصة الاستماع إلى السيدة Francesca Cucinotta، مديرة الشؤون الدولية في جامعة Centria، وزملائها. أود أن أشكرهم بصدق على المعلومات الواضحة والصريحة والعملية جداً التي قدموها عن الدراسة في كوكولا، وعن الرسوم الدراسية والمنح والحياة الطلابية، وعما تتوقعه Centria فعلاً من الطلاب الدوليين.</p>
+<p>كان رمز بطاقتي في ذلك الحدث ZS7016.</p>
+<p>غيّر ذلك العرض خطتي. قبل ذلك اليوم كنت أنظر في جامعات كثيرة. بعد الاستماع إلى السيدة Cucinotta وفريقها فهمت أن Centria ليست جامعة نظرية. إنها جامعة عملية، فيها مشاريع حقيقية ومختبرات حقيقية وتعاون حقيقي مع الشركات. وهذا بالضبط ما أحتاجه.</p>
+<p>كما أعددت قبل الحدث استبياناً تقييمياً مفصلاً عن حالتي ومؤهلاتي ومدى توافق اعترافي المهني الألماني مع النظام الفنلندي. أجابت السيدة Cucinotta وزملاؤها بلطف عن أسئلتي في الرباط. هذا الاستبيان مع إجاباتهم جزء من ملف طلبي (انظر زر الاستبيان)، وملفي المهني الكامل متاح عبر زر المحفظة.</p>
+<h3>من أنا</h3>
+<p>عمري 30 سنة، من آسفي بالمغرب. أحمل شهادة الباكالوريا في العلوم الفيزيائية، ودبلوم التقني المتخصص في الكهروميكانيك من معهد التكنولوجيا التطبيقية بالدار البيضاء (2020)، واعترافاً مهنياً ألمانياً كـ Elektroniker für Automatisierungstechnik من IHK-FOSA (2024)، مع خطة تأهيل Qualifizierungsplan من IHK برلين (2025).</p>
+<p>عملت كهربائياً في Actemium / GMCE II بالجرف الأصفر (11/2021 – 09/2022) في مشاريع صناعية لمجموعة OCP وTAQA المغرب وSTMicroelectronics وغيرها. قمت بتشغيل توربينات ومحطات التوليد المشترك، وركّبت أنظمة كهربائية حتى 6.6 كيلوفولت، وعايرت المشغلات والمحللات، وعملت ببروتوكول HART، واختبرت مفاتيح الجهد المتوسط (1–36 كيلوفولت)، ودمجت أنظمة SCADA. وقبل ذلك عملت تقني غرفة تحكم في Univers Acier أدير أنظمة DCS وHMI، وتقني أنظمة وسم صناعي في SE Solution.</p>
+<p>وبالتوازي أنجزت تكويناً مستمراً في الأمن السيبراني (Cisco Networking Academy، 2025)، وMicrosoft Azure-900، وأمن المعلومات والحاسوب (IAEA، 2025)، وإحصاءات التجارة الدولية للسلع (UNCTAD / UNSD / WTO، 2025).</p>
+<p>معدلي في الباكالوريا في العلوم الفيزيائية أقل من 12/20. أذكر ذلك بصدق، لأنني لا أريد التقدم عبر الانتقاء بالشهادات الذي تحسمه المعدلات. أريد التقدم عبر امتحان UAS الدولي، لأنه يقيس ما أستطيع فعله اليوم، لا معدلي في عام 2016.</p>
+<p>بعد خمس سنوات من العمل الصناعي والتكوين المستمر والاعتراف المهني الألماني، مستواي التقني اليوم أقوى بكثير من معدلي الدراسي. لقد عشت مفاهيم المستشعرات والمتحكمات والأتمتة ومراقبة العمليات في مصنع حقيقي، لا في قاعة الدرس فقط.</p>
+<h3>خطتي للاعتراف المهني: النظام الأوروبي مقابل النظام الفنلندي</h3>
+<p>هذا هو الجزء المحوري من طلبي، وكان الموضوع الرئيسي للاستبيان الذي ناقشته مع السيدة Cucinotta وزملائها في الرباط.</p>
+<p>درست بعناية كيف تُقيَّم مؤهلاتي في نظام الاتحاد الأوروبي وكيف تُقيَّم في النظام الفنلندي. أريد عرض ذلك بوضوح كي لا يُساء فهم ملفي.</p>
+<p>في نظام الاتحاد الأوروبي ثلاثة أنواع مختلفة من الاعتراف:</p>
+<ul>
+<li><b>الاعتراف الأكاديمي</b> – تقرره الجامعة نفسها. ويمنح حق دخول برنامج دراسي والاعتراف بالتعلم السابق.</li>
+<li><b>الاعتراف المهني</b> – تقرره الدولة للمهن المنظمة بموجب التوجيه الأوروبي 2005/36/EC. وفي فنلندا تقرره OPH، الوكالة الوطنية الفنلندية للتعليم، وهي أيضاً مركز ENIC-NARIC الفنلندي.</li>
+<li><b>اعتراف سوق العمل</b> – يقرره أصحاب العمل بناءً على الثقة بالمؤهل والخبرة الفعلية.</li>
+</ul>
+<p>في النظام الفنلندي ينطبق التمييز نفسه، مع خصوصية مهمة: في فنلندا تتولى مؤسسات التعليم العالي نفسها الاعتراف الأكاديمي. ولا تقرر OPH القبول. تقرر OPH الاعتراف المهني للمهن المنظمة بعد الإقامة في فنلندا. ولهذا أتقدم أولاً إلى Centria، لا إلى OPH.</p>
+<h3>مؤهلاتي مقيَّمة في النظامين</h3>
+<p><b>1. شهادة الباكالوريا، العلوم الفيزيائية – EQF 4.</b> في النظام الأوروبي، وبموجب اتفاقية لشبونة للاعتراف، هي مؤهل ثانوي يمنح حق الالتحاق بالتعليم العالي. وفي فنلندا تُقبل كحق في التقدم، لكن معدلي الأقل من 12/20 لا يؤهلني للانتقاء بالشهادات. لذلك أتقدم عبر امتحان UAS. وهي تمنح 0 وحدة ECTS لأنها مؤهل للولوج لا مؤهل جامعي.</p>
+<p><b>2. دبلوم التقني المتخصص، الكهروميكانيك – EQF 5، باك+2.</b> في النظام الأوروبي هو مؤهل مهني عالٍ من الدورة القصيرة. وفي فنلندا يقارَن بدراسات جزئية في جامعة علوم تطبيقية، لكنه ليس شهادة بكالوريوس. ولا يمنح وحدات ECTS تلقائياً. غير أنه، بموجب مبادئ Centria للاعتراف بالتعلم السابق (RPL / AHOT)، قد يمنح 10–20 وحدة بعد التسجيل إذا أثبتّ كفاءات تطابق الشهادة في الإلكترونيك والكهروميكانيك والأتمتة.</p>
+<p><b>3. IHK-FOSA، Elektroniker für Automatisierungstechnik – EQF 4 / DQR 4.</b> هذا أقوى مؤهلاتي المهنية. في النظام الألماني هو مسجل في DQR عند المستوى 4، ويقابل 3.5 سنوات من التكوين المهني المزدوج الألماني، بنحو 4200 ساعة من التكوين النظري والعملي، معتمدة من BIBB وIHK. وفي النظام الأوروبي يُعترف به مؤهلاً مهنياً في دول الاتحاد، لكنه لا يتحول تلقائياً إلى مؤهل فنلندي. ولا يمنح وحدات ECTS تلقائياً، لأن ECTS للجامعات فقط وECVET للتكوين المهني. وفي النظام الفنلندي يجب تقييم هذا المؤهل على خطوتين:</p>
+<ul>
+<li><b>الخطوة الأكاديمية:</b> تقرر Centria عبر RPL عدد وحدات ECTS التي تعترف بها. وفي حالتي أتوقع 15–30 وحدة، خاصة للتدريب العملي والأنظمة المضمّنة، إذا قدمت ملف RPL قوياً بشهادات العمل ووثائق IHK وعرضاً لإثبات الكفاءة.</li>
+<li><b>الخطوة المهنية:</b> تقرر OPH، بعد أن أصبح مقيماً في فنلندا، هل مهنتي منظمة في فنلندا وهل أحتاج قراراً رسمياً بالاعتراف للعمل فيها. وفي تكنولوجيا المعلومات والأتمتة معظم الوظائف غير منظمة ويقرر صاحب العمل. لذلك فإن شهادتي الفنلندية من Centria مع الخبرة العملية في فنلندا ستكون اعترافي المهني الحقيقي هناك.</li>
+</ul>
+<p><b>4. Qualifizierungsplan، IHK برلين، 2025 – EQF 4.</b> هذه الوثيقة مهمة جداً لحالتي. فهي تُظهر أن النظام الألماني قيّمني، وأنني حددت بدقة ما أحتاج إلى استكماله: Digitalisierung وDatenschutz وInformationssicherheit. وهذه بالضبط المواد التي يدرّسها Smart Devices and Solutions في Centria: الرقمنة وحماية البيانات وأمن المعلومات. وهذا يثبت أن Centria هي الاستمرار الطبيعي لمؤهلي الألماني، لا تكراراً له.</p>
+<p><b>5. شهادات Cisco وAzure-900 وIAEA وUNCTAD – بلا مستوى EQF، 0 وحدة ECTS.</b> في النظامين هي شهادات تكوين مستمر لا مؤهلات حكومية. ولا تمنح وحدات تلقائياً. لكنها تدعم RPL في وحدات الأمن والحوسبة السحابية الأساسية، وتثبت تعلمي المستمر في الأمن السيبراني والحوسبة السحابية وأمن البيانات.</p>
+<p><b>خلاصتي حول الاعتراف:</b></p>
+<ul>
+<li>عند القبول: 0 وحدة ECTS معترف بها تلقائياً</li>
+<li>بعد التسجيل عبر RPL: 15–30 وحدة قد يُعترف بها، أي فصل دراسي كامل</li>
+<li>بعد التخرج: بكالوريوس الهندسة في تكنولوجيا المعلومات، 240 وحدة ECTS، EQF 6، معترف به بالكامل في أوروبا</li>
+</ul>
+<p>لهذا أحتاج Centria. ألمانيا منحتني مهنة. وفنلندا، عبر Centria، ستمنحني شهادة ومهنة. مؤهل IHK وحده يُبقيني تقنياً. أما بكالوريوس Centria فسيجعلني مهندساً، بشهادة فنلندية وخبرة فنلندية ومؤهل أوروبي بمستوى EQF 6.</p>
+<h3>لماذا أختار فنلندا اليوم وليس ألمانيا</h3>
+<p>أريد قول ذلك بوضوح، لأنه كان أيضاً جزءاً من استبياني في الرباط.</p>
+<p>لم أعد مهتماً بمواصلة مساري التعليمي مع ألمانيا. أحترم النظام الألماني كثيراً، وأنا ممتن للاعتراف الذي حصلت عليه من IHK-FOSA. لكنني اليوم أريد فنلندا.</p>
+<p>أريد فنلندا بسبب جودة التعليم في شمال أوروبا، وبسبب التعلم العملي القائم على المشاريع في Centria، وبسبب الثقافة المرحِّبة التي لمستها من وفدكم في المغرب، وبسبب انفتاح Centria على الطلاب المغاربة.</p>
+<p>في الرباط لم أشعر أنني أُعامل كرقم. شعرت أنني أُعامل كطالب مستقبلي، له أسئلة حقيقية ومشروع حقيقي. أجابت السيدة Cucinotta وزملاؤها بصدق حتى عندما كانت الإجابات صعبة، عن الرسوم واللغة والعمل والحياة في كوكولا. وهذه الصراحة منحتني الثقة.</p>
+<p>أرحب بأي تسهيل يمكنكم تقديمه لمساعدتي على مواصلة تعليمي في فنلندا. لا أطلب استثناءً من القواعد. أطلب فقط تقييماً عادلاً عبر امتحان UAS، وفرصة لإثبات قيمتي من خلال دراستي.</p>
+<p>لدي طموح كبير جداً لمواصلة تعليمي وإبداعي في هذه الجامعة القوية في شمال أوروبا. لا أريد أن أتوقف عند كوني تقنياً. أريد أن أصبح مهندساً يصمم أنظمة ذكية، ويعمل ضمن فرق دولية، ويسهم في الصناعة الفنلندية والبحث.</p>
+<h3>لماذا Smart Devices and Solutions ولماذا Centria؟</h3>
+<p>اخترت Smart Devices and Solutions لأنه البرنامج الوحيد الذي يربط ما أعرفه بما أحتاج إلى تعلمه.</p>
+<p><b>ما أعرفه:</b> المستشعرات والمشغلات وPLC وDCS وHMI وSCADA والشبكات الصناعية والسلامة الكهربائية وتحسين العمليات.</p>
+<p><b>ما أريد تعلمه في Centria:</b> معماريات إنترنت الأشياء، والأنظمة المضمّنة، والحوسبة الطرفية، وتحليل البيانات، وتصور البيانات، والذكاء الاصطناعي التطبيقي، وكيفية تصميم الأنظمة الذكية المترابطة ونمذجتها ودمجها في بيئات صناعية ورقمية حقيقية.</p>
+<p>أقنعتني بشكل خاص ثلاثة أمور سمعتها في الرباط وعلى موقعكم:</p>
+<ul>
+<li><b>Centria IT Lab</b> – بيئة مشتركة يعمل فيها الطلاب والأساتذة والباحثون والشركات معاً على برمجيات وأنظمة ذكية وأمن سيبراني ومشاريع سحابية حقيقية. هنا أريد أن أتعلم.</li>
+<li><b>التعلم القائم على المشاريع</b> – يعمل الطلاب في فرق متعددة التخصصات على مشكلات عملاء حقيقية بمنهجيات رشيقة وأدوات الصناعة. وهكذا عملت تماماً في Actemium.</li>
+<li><b>البيئة الدولية</b> – نحو 130 جامعة شريكة، وطلاب من نحو 40 بلداً، وإمكانية فصل تبادل أو تدريب عملي في الخارج عبر Erasmus+.</li>
+</ul>
+<p>لا أريد شهادة نظرية بحتة. أريد شهادة تجعلني جاهزاً للعمل مهندس إنترنت الأشياء، أو مطور أنظمة مضمّنة، أو مهندس أنظمة ذكية، أو مطور حلول الذكاء الاصطناعي والبيانات.</p>
+<h3>ما سأقدمه إلى Centria</h3>
+<p>لن أصل طالباً درس النظريات فقط. سأصل بخبرة صناعية لا يملكها معظم طلاب البكالوريوس.</p>
+<p>أود خلال دراستي تطوير مشروع بحثي في مجال السلامة الصناعية والأنظمة المضمّنة، بإشراف أساتذتكم، وبالامتثال الكامل لقواعد حماية البيانات الأوروبية (GDPR) ومبادئ الذكاء الاصطناعي المسؤول. مشروعي بعيد المدى، الذي أسميه IMPERIUM RH، ليس منتجاً تجارياً. أراه مشروعاً بحثياً أكاديمياً: أداة متخصصة ومفتوحة للتدريب في القياس الصناعي والسلامة المهنية، تُطوَّر في مختبركم مع فريق قوي، للبحث والتعليم.</p>
+<p>أنا مستعد للعمل في فرق متعددة التخصصات، ولمشاركة خبرتي الصناعية مع الطلاب الأصغر، وللإسهام في مشاريع تربط Centria بشركات حقيقية.</p>
+<h3>فهمي للرسوم والمنح والإقامة</h3>
+<p>قرأت بعناية معلومات الرسوم الدراسية والمنح لديكم، بما فيها ما قُدّم في الرباط. وأفهم أن:</p>
+<ul>
+<li>رسوم برامج البكالوريوس للطلاب من خارج الاتحاد الأوروبي/المنطقة الاقتصادية الأوروبية هي 9500 يورو للسنة الدراسية للمبتدئين في 2027/2028.</li>
+<li>يجب دفع الرسوم كاملة عبر Flywire، ولا يمكن تقسيطها في السنة الأولى.</li>
+<li>منحة Early Bird بخصم 25% متاحة إذا قبلت العرض المشروط ودفعت خلال 14 يوماً من الإشعار.</li>
+<li>منحة Progress بخصم 20% متاحة إذا أنجزت 60 وحدة ECTS في السنة وتقدمت بين 1 و31 أكتوبر.</li>
+<li>منحة Academic Performance بخصم 100% تمنحها لجنة انتقاء مرة واحدة لكل شهادة للطلاب ذوي التقدم والمعدل المتميزين.</li>
+<li>منحة اللغة الفنلندية بقيمة 2000 يورو متاحة إذا أنجزت اختبار YKI للفنلندية بمستوى B1.1 خلال دراستي في Centria.</li>
+</ul>
+<p>وأفهم أيضاً أنه للحصول على تصريح إقامة فنلندي للدراسة يجب أن أثبت امتلاك أموال كافية لتكاليف المعيشة، وهي حالياً 800 يورو شهرياً، أي 9600 يورو لسنة واحدة، في حسابي البنكي الخاص، إضافة إلى الرسوم الدراسية، مع تأمين صحي خاص.</p>
+<p>أعي هذه المتطلبات وأعمل على تأمين التمويل لتلبيتها. هدفي إنجاز 60 وحدة ECTS كل سنة، وتعلم الفنلندية حتى مستوى B1.1، والتقدم لمنحتي Progress وPerformance بالتفوق الأكاديمي لا بالاستثناء.</p>
+<p>أنا عاطل عن العمل حالياً وميزانيتي محدودة. لا أطلب استثناءً من قواعد الرسوم، لأنني أفهم أن قائمة الإعفاءات مغلقة وتقوم على تصاريح الإقامة والجنسية الأوروبية. أطلب فقط فرصة التقييم العادل عبر امتحان UAS، وإثبات قيمتي من خلال دراستي في Centria.</p>
+<h3>خطتي المستقبلية في فنلندا</h3>
+<p>هدفي بعد التخرج العمل في فنلندا في مجال إنترنت الأشياء والأتمتة والأنظمة الذكية، والإسهام في الصناعة الفنلندية. وخطتي:</p>
+<ul>
+<li>إنجاز 240 وحدة ECTS في Smart Devices and Solutions</li>
+<li>إنجاز التدريب العملي ومشروع التخرج بـ 15 وحدة في شركة فنلندية</li>
+<li>التقدم بطلب الاعتراف بالتعلم السابق (RPL / AHOT) لخبرتي الصناعية ومؤهل IHK، وفق مبادئ Centria للاعتراف بالتعلم السابق</li>
+<li>تعلم الفنلندية، والمشاركة في أنشطة الاندماج، والتقدم لتبادل Erasmus+ أو تدريب في الخارج أثناء دراستي</li>
+<li>بعد التخرج، التقدم بطلب تصريح إقامة للبحث عن عمل في فنلندا وفق القانون الفنلندي</li>
+</ul>
+<p>أنا مستعد للإقامة في كوكولا، والدراسة بدوام كامل، وإنجاز 60 وحدة ECTS في السنة، والاندماج في الحياة الأكاديمية والمهنية الفنلندية.</p>
+<h3>الخاتمة</h3>
+<p>أشكر مرة أخرى السيدة Francesca Cucinotta وزملاءها على قدومهم إلى المغرب وعلى المعلومات الصريحة والمفصلة التي قدموها لنا في فندق ماريوت بالرباط يوم 8 نوفمبر 2026. شكراً على الثقافة المرحِّبة، وعلى الانفتاح تجاه الطلاب المغاربة، وعلى جودة التعليم التي تمثلها Centria في شمال أوروبا. لقد منحني ذلك اللقاء الوضوح لاختيار Centria، واختيار فنلندا اليوم.</p>
+<p>لدي طموح كبير لمواصلة تعليمي وإبداعي في جامعتكم. أرجو بكل احترام أن تنظروا في طلبي للالتحاق ببكالوريوس الهندسة في تكنولوجيا المعلومات، Smart Devices and Solutions، عبر امتحان UAS الدولي.</p>
+<p>أنا جاهز لأي وثيقة إضافية أو مقابلة أو اختبار تطلبونه.</p>
+<p>مع خالص التقدير،<br><b>رضا حمادة</b><br>آسفي، المغرب<br>البريد الإلكتروني: Hamada.rida.321@proton.me</p>
+`;
+
+</script>
+<script>
+window.LETTER=window.LETTER||{};
+window.LETTER.fr=`
+<p><b>Lettre de motivation – Motivaatiokirje</b><br>Rida Hamada<br>Programme : Bachelor of Engineering, Informatique – Smart Devices and Solutions (SDS)<br>Centria University of Applied Sciences, Kokkola<br>Objet : candidature commune / admission continue 2027</p>
+<p>Madame, Monsieur, chers membres de l'équipe d'admission et de l'équipe des affaires internationales de Centria University of Applied Sciences,</p>
+<p>Je m'appelle Rida Hamada. Je suis technicien en électronique marocain pour la technique d'automatisation, reconnu par l'IHK-FOSA en Allemagne, et je vous écris pour candidater au Bachelor of Engineering en informatique, spécialisation Smart Devices and Solutions, à partir de l'automne 2027.</p>
+<p>J'ai rencontré votre délégation en personne au Maroc, et cette rencontre est la raison de cette lettre.</p>
+<p>Le 8 novembre 2026, à l'hôtel Marriott de Rabat, j'ai assisté à la présentation de Centria au Maroc. J'ai eu l'occasion d'écouter Mme Francesca Cucinotta, directrice des affaires internationales de Centria University of Applied Sciences, et ses collègues. Je souhaite les remercier sincèrement pour les informations claires, honnêtes et très pratiques qu'ils nous ont données sur les études à Kokkola, les frais de scolarité, les bourses, la vie étudiante et ce que Centria attend réellement des étudiants internationaux.</p>
+<p>Mon code de badge pour cet événement était ZS7016.</p>
+<p>Cette présentation a changé mon plan. Avant ce jour, j'examinais de nombreuses universités. Après avoir écouté Mme Cucinotta et son équipe, j'ai compris que Centria n'est pas une université théorique. C'est une université pratique, avec de vrais projets, de vrais laboratoires et une vraie coopération avec les entreprises. C'est exactement ce dont j'ai besoin.</p>
+<p>J'avais aussi préparé, avant l'événement, un questionnaire d'évaluation détaillé sur mon cas, mes qualifications et la compatibilité de ma reconnaissance professionnelle allemande avec le système finlandais. Mme Cucinotta et ses collègues ont aimablement répondu à mes questions à Rabat. Ce questionnaire, avec leurs réponses, fait partie de mon dossier de candidature (voir le bouton Questionnaire), et mon portfolio professionnel complet est disponible via le bouton Portfolio.</p>
+<h3>Qui je suis</h3>
+<p>J'ai 30 ans et je viens de Safi, au Maroc. Je suis titulaire du Diplôme du Baccalauréat en Sciences Physiques, d'un Diplôme de Technicien Spécialisé en Électromécanique de l'Institute of Applied Technology de Casablanca (2020), et d'une reconnaissance professionnelle allemande d'Elektroniker für Automatisierungstechnik délivrée par l'IHK-FOSA (2024), avec un Qualifizierungsplan de l'IHK Berlin (2025).</p>
+<p>J'ai travaillé comme électricien chez Actemium / GMCE II à Jorf Lasfar (11/2021 – 09/2022) sur des projets industriels pour OCP Group, TAQA Morocco, STMicroelectronics et d'autres. J'ai mis en service des turbines et des centrales de cogénération, installé des systèmes électriques jusqu'à 6,6 kV, calibré des actionneurs et des analyseurs, travaillé avec le protocole HART, testé des appareillages moyenne tension (1–36 kV) et intégré des systèmes SCADA. Auparavant, j'ai été technicien de salle de contrôle chez Univers Acier, en charge des DCS et HMI, et technicien en marquage industriel chez SE Solution.</p>
+<p>En parallèle, j'ai suivi une formation continue en cybersécurité (Cisco Networking Academy, 2025), Microsoft Azure-900, sécurité de l'information et informatique (AIEA, 2025) et statistiques du commerce international des marchandises (UNCTAD / UNSD / OMC, 2025).</p>
+<p>Ma note au Baccalauréat en Sciences Physiques est inférieure à 12/20. Je le dis honnêtement, car je ne veux pas candidater par la sélection sur dossier de notes, où les notes décident. Je veux candidater par l'examen international UAS, car cet examen mesure ce que je sais faire aujourd'hui, et non ma note de 2016.</p>
+<p>Après cinq ans de travail industriel, de formation continue et de reconnaissance professionnelle allemande, mon niveau technique actuel est bien supérieur à ma note scolaire. J'ai vécu les notions de capteurs, de contrôleurs, d'automatisation et de supervision de processus dans une vraie usine, pas seulement en salle de classe.</p>
+<h3>Mon plan de reconnaissance professionnelle : système de l'UE et système finlandais</h3>
+<p>C'est la partie centrale de ma candidature, et c'était le sujet principal du questionnaire que j'ai discuté avec Mme Cucinotta et ses collègues à Rabat.</p>
+<p>J'ai étudié avec soin comment mes qualifications sont évaluées dans le système de l'Union européenne et dans le système finlandais. Je souhaite le présenter clairement afin que mon dossier ne soit pas mal compris.</p>
+<p>Dans le système de l'Union européenne, il existe trois types de reconnaissance :</p>
+<ul>
+<li><b>Reconnaissance académique</b> – décidée par l'université elle-même. Elle donne le droit d'entrer dans un programme d'études et de faire reconnaître les acquis antérieurs.</li>
+<li><b>Reconnaissance professionnelle</b> – décidée par l'État, pour les professions réglementées, selon la directive européenne 2005/36/CE. En Finlande, elle relève de l'OPH, l'Agence nationale finlandaise pour l'éducation, qui est aussi le centre ENIC-NARIC finlandais.</li>
+<li><b>Reconnaissance par le marché du travail</b> – décidée par les employeurs, selon la confiance dans la qualification et l'expérience réelle.</li>
+</ul>
+<p>Dans le système finlandais, la même distinction s'applique, avec une spécificité importante : en Finlande, ce sont les établissements d'enseignement supérieur eux-mêmes qui sont responsables de la reconnaissance académique. L'OPH ne décide pas de l'admission. L'OPH décide de la reconnaissance professionnelle pour les professions réglementées, après la résidence en Finlande. C'est pourquoi je candidate d'abord à Centria, et non à l'OPH.</p>
+<h3>Mes qualifications, évaluées dans les deux systèmes</h3>
+<p><b>1. Diplôme du Baccalauréat, Sciences Physiques – EQF 4.</b> Dans le système de l'UE, selon la Convention de Lisbonne sur la reconnaissance, c'est une qualification secondaire donnant accès à l'enseignement supérieur. En Finlande, elle est acceptée comme droit de candidater, mais ma note inférieure à 12/20 ne me qualifie pas pour la sélection sur dossier de notes. Je candidate donc par l'examen UAS. Elle donne 0 ECTS, car c'est une qualification d'accès et non une qualification universitaire.</p>
+<p><b>2. Diplôme de Technicien Spécialisé, Électromécanique – EQF 5, Bac+2.</b> Dans le système de l'UE, c'est une qualification professionnelle supérieure de cycle court. En Finlande, elle est comparable à des études partielles dans une université de sciences appliquées, mais ce n'est pas un diplôme de Bachelor. Elle ne donne automatiquement aucun ECTS. Toutefois, selon les principes de reconnaissance des acquis antérieurs de Centria (RPL / AHOT), elle peut donner 10 à 20 ECTS après l'inscription, si je démontre des compétences correspondant au diplôme en électronique, électromécanique et automatisation.</p>
+<p><b>3. IHK-FOSA, Elektroniker für Automatisierungstechnik – EQF 4 / DQR 4.</b> C'est ma qualification professionnelle la plus solide. Dans le système allemand, elle est inscrite au DQR au niveau 4, ce qui correspond à 3,5 ans de formation professionnelle duale allemande, avec environ 4 200 heures de formation théorique et pratique, certifiées par le BIBB et l'IHK. Dans le système de l'UE, cette qualification est reconnue comme qualification professionnelle dans toute l'UE, mais elle n'est pas automatiquement convertie en qualification finlandaise. Elle ne donne pas d'ECTS automatiquement, car l'ECTS concerne uniquement les universités et l'ECVET la formation professionnelle. Dans le système finlandais, cette qualification doit être évaluée en deux étapes :</p>
+<ul>
+<li><b>Étape académique :</b> Centria décide, par la RPL, du nombre d'ECTS qu'elle peut reconnaître. Dans mon cas, j'en attends 15 à 30, notamment pour la formation pratique et les systèmes embarqués, si je présente un solide portfolio RPL avec certificats de travail, documents IHK et démonstration de compétences.</li>
+<li><b>Étape professionnelle :</b> l'OPH décide, une fois que je réside en Finlande, si ma profession est réglementée en Finlande et si j'ai besoin d'une décision formelle de reconnaissance pour l'exercer. En informatique et en automatisation, la plupart des postes ne sont pas réglementés et c'est l'employeur qui décide. Mon diplôme finlandais de Centria, combiné à une expérience professionnelle en Finlande, sera donc ma véritable reconnaissance professionnelle en Finlande.</li>
+</ul>
+<p><b>4. Qualifizierungsplan, IHK Berlin, 2025 – EQF 4.</b> Ce document est très important pour mon cas. Il montre que j'ai été évalué par le système allemand et que j'ai identifié exactement ce que je dois compléter : Digitalisierung, Datenschutz, Informationssicherheit. Ce sont exactement les matières que Smart Devices and Solutions enseigne à Centria : la digitalisation, la protection des données et la sécurité de l'information. Cela prouve que Centria est la continuation naturelle de ma qualification allemande, et non une répétition.</p>
+<p><b>5. Certificats Cisco, Azure-900, AIEA, UNCTAD – aucun niveau EQF, 0 ECTS.</b> Dans les deux systèmes, ce sont des certificats de formation continue, pas des qualifications d'État. Ils ne donnent pas d'ECTS automatiquement. Ils soutiennent toutefois la RPL pour les modules de base en sécurité et cloud, et prouvent ma formation continue en cybersécurité, cloud et sécurité des données.</p>
+<p><b>Ma conclusion sur la reconnaissance :</b></p>
+<ul>
+<li>À l'entrée : 0 ECTS reconnu automatiquement</li>
+<li>Après l'inscription, par la RPL : 15 à 30 ECTS potentiellement reconnus, soit un semestre complet</li>
+<li>Après le diplôme : B.Eng. Informatique, 240 ECTS, EQF 6, pleinement reconnu en Europe</li>
+</ul>
+<p>C'est pourquoi j'ai besoin de Centria. L'Allemagne m'a donné un métier. La Finlande, par Centria, me donnera un diplôme et un métier. La qualification IHK seule me maintient comme technicien. Un Bachelor de Centria fera de moi un ingénieur, avec un diplôme finlandais, une expérience finlandaise et une qualification européenne de niveau EQF 6.</p>
+<h3>Pourquoi je choisis la Finlande aujourd'hui, et non l'Allemagne</h3>
+<p>Je veux le dire clairement, car cela faisait aussi partie de mon questionnaire à Rabat.</p>
+<p>Je ne souhaite plus poursuivre mon parcours de formation avec l'Allemagne. Je respecte beaucoup le système allemand et je suis reconnaissant de la reconnaissance obtenue de l'IHK-FOSA. Mais aujourd'hui, je veux la Finlande.</p>
+<p>Je veux la Finlande pour la qualité de l'éducation en Europe du Nord, pour l'apprentissage pratique par projets à Centria, pour la culture accueillante que j'ai ressentie de la part de votre délégation au Maroc, et pour l'ouverture d'esprit de Centria envers les étudiants marocains.</p>
+<p>À Rabat, je n'ai pas eu le sentiment d'être traité comme un numéro. J'ai senti que j'étais traité comme un futur étudiant, avec de vraies questions et un vrai projet. Mme Cucinotta et ses collègues ont répondu honnêtement, même quand les réponses étaient difficiles, sur les frais, la langue, le travail et la vie à Kokkola. Cette honnêteté m'a donné confiance.</p>
+<p>J'accueille avec reconnaissance toute facilitation que vous pouvez m'offrir pour poursuivre mes études en Finlande. Je ne demande pas d'exception aux règles. Je demande seulement une évaluation équitable, par l'examen UAS, et la possibilité de prouver ma valeur par mes études.</p>
+<p>J'ai une très, très grande ambition de poursuivre mes études et ma créativité dans cette solide université d'Europe du Nord. Je ne veux pas m'arrêter au statut de technicien. Je veux devenir un ingénieur qui conçoit des systèmes intelligents, travaille dans des équipes internationales et contribue à l'industrie et à la recherche finlandaises.</p>
+<h3>Pourquoi Smart Devices and Solutions, et pourquoi Centria ?</h3>
+<p>J'ai choisi Smart Devices and Solutions car c'est le seul programme qui relie ce que je sais déjà à ce que je dois apprendre.</p>
+<p><b>Ce que je sais :</b> capteurs, actionneurs, automates (PLC), DCS, HMI, SCADA, réseaux industriels, sécurité électrique et optimisation des processus.</p>
+<p><b>Ce que je veux apprendre à Centria :</b> architectures IoT, systèmes embarqués, edge computing, analyse de données, visualisation de données, IA appliquée, et la façon de concevoir, prototyper et intégrer des systèmes intelligents connectés dans des environnements industriels et numériques réels.</p>
+<p>Trois éléments entendus à Rabat et sur votre site m'ont particulièrement convaincu :</p>
+<ul>
+<li><b>Centria IT Lab</b> – un environnement partagé où étudiants, enseignants, chercheurs et entreprises travaillent ensemble sur de vrais projets de logiciels, systèmes intelligents, cybersécurité et cloud. C'est là que je veux apprendre.</li>
+<li><b>Apprentissage par projets</b> – les étudiants travaillent en équipes pluridisciplinaires sur de vrais problèmes de clients, avec des méthodes agiles et des outils industriels. C'est exactement ainsi que j'ai travaillé chez Actemium.</li>
+<li><b>Environnement international</b> – environ 130 universités partenaires, des étudiants d'une quarantaine de pays, et la possibilité d'un semestre d'échange ou d'un stage à l'étranger via Erasmus+.</li>
+</ul>
+<p>Je ne veux pas d'un diplôme purement théorique. Je veux un diplôme qui me prépare à travailler comme ingénieur IoT, développeur de systèmes embarqués, ingénieur systèmes intelligents ou développeur de solutions IA et données.</p>
+<h3>Ce que j'apporterai à Centria</h3>
+<p>Je n'arriverai pas comme un étudiant qui n'a étudié que la théorie. J'arriverai avec une expérience industrielle que la plupart des étudiants de bachelor n'ont pas.</p>
+<p>Pendant mes études, j'aimerais développer un projet de recherche dans le domaine de la sécurité industrielle et des systèmes embarqués, sous la supervision de vos enseignants, et dans le plein respect des règles européennes de protection des données (RGPD) et des principes d'IA responsable. Mon projet à long terme, que j'appelle IMPERIUM RH, n'est pas un produit commercial. Je le vois comme un projet de recherche académique : un outil spécialisé et ouvert pour la formation en instrumentation industrielle et en sécurité au travail, développé dans votre laboratoire, avec une équipe solide, pour la recherche et l'enseignement.</p>
+<p>Je suis prêt à travailler en équipes pluridisciplinaires, à partager mon expérience industrielle avec des étudiants plus jeunes et à contribuer à des projets qui relient Centria à de vraies entreprises.</p>
+<h3>Ma compréhension des frais, des bourses et de la résidence</h3>
+<p>J'ai lu attentivement vos informations sur les frais de scolarité et les bourses, y compris celles données à Rabat. Je comprends que :</p>
+<ul>
+<li>Les frais de scolarité des programmes de Bachelor pour les étudiants hors UE/EEE sont de 9 500 EUR par année académique pour les étudiants commençant en 2027/2028.</li>
+<li>Les frais doivent être payés intégralement via Flywire et ne peuvent pas être payés en plusieurs fois la première année.</li>
+<li>La bourse Early Bird de -25 % est disponible si j'accepte l'offre conditionnelle et paie dans les 14 jours suivant la notification.</li>
+<li>La bourse Progress de -20 % est disponible si je valide 60 ECTS par an et dépose ma demande entre le 1er et le 31 octobre.</li>
+<li>La bourse Academic Performance de -100 % est attribuée par un comité de sélection, une fois par diplôme, aux étudiants ayant une excellente progression et un excellent GPA.</li>
+<li>La bourse de langue finnoise de 2 000 EUR est disponible si je réussis le YKI finnois au niveau B1.1 pendant mes études à Centria.</li>
+</ul>
+<p>Je comprends aussi que, pour un permis de séjour finlandais pour études, je dois prouver des fonds suffisants pour les frais de subsistance, actuellement 800 EUR par mois, soit 9 600 EUR pour un an, sur mon propre compte bancaire, en plus des frais de scolarité, ainsi qu'une assurance santé privée.</p>
+<p>Je suis conscient de ces exigences et je travaille à réunir le financement nécessaire. Mon objectif est de valider 60 ECTS chaque année, d'apprendre le finnois jusqu'au niveau B1.1 et de postuler aux bourses Progress et Performance par l'excellence académique, et non par exception.</p>
+<p>Je suis actuellement sans emploi et mon budget est limité. Je ne demande pas d'exception aux règles sur les frais de scolarité, car je comprends que la liste d'exemptions est fermée et fondée sur les titres de séjour et la citoyenneté UE/EEE. Je demande seulement la possibilité d'être évalué équitablement par l'examen UAS et de prouver ma valeur par mes études à Centria.</p>
+<h3>Mon plan futur en Finlande</h3>
+<p>Mon objectif après le diplôme est de travailler en Finlande dans le domaine de l'IoT, de l'automatisation et des systèmes intelligents, et de contribuer à l'industrie finlandaise. Mon plan :</p>
+<ul>
+<li>Valider 240 ECTS en Smart Devices and Solutions</li>
+<li>Effectuer le stage pratique et mon mémoire de 15 ECTS dans une entreprise finlandaise</li>
+<li>Demander la reconnaissance des acquis antérieurs (RPL / AHOT) pour mon expérience industrielle et ma qualification IHK, conformément aux principes de Centria</li>
+<li>Apprendre le finnois, participer aux activités d'intégration et postuler à un échange Erasmus+ ou à un stage à l'étranger pendant mes études</li>
+<li>Après le diplôme, demander un permis de séjour pour chercher du travail en Finlande, conformément à la loi finlandaise</li>
+</ul>
+<p>Je suis prêt à rester à Kokkola, à étudier à plein temps, à valider 60 ECTS par an et à m'intégrer à la vie académique et professionnelle finlandaise.</p>
+<h3>Conclusion</h3>
+<p>Je remercie encore Mme Francesca Cucinotta et ses collègues d'être venus au Maroc et de nous avoir donné des informations honnêtes et détaillées à l'hôtel Marriott de Rabat le 8 novembre 2026. Merci pour la culture accueillante, pour l'ouverture envers les étudiants marocains et pour la qualité de l'éducation que Centria représente en Europe du Nord. Cette rencontre m'a donné la clarté de choisir Centria, et de choisir la Finlande aujourd'hui.</p>
+<p>J'ai une très grande ambition de poursuivre mes études et ma créativité dans votre université. Je vous demande respectueusement d'examiner ma candidature au Bachelor of Engineering en informatique, Smart Devices and Solutions, par l'examen international UAS.</p>
+<p>Je suis disponible pour tout document complémentaire, entretien ou test que vous pourriez exiger.</p>
+<p>Veuillez agréer, Madame, Monsieur, mes salutations distinguées,<br><b>Rida Hamada</b><br>Safi, Maroc<br>E-mail : Hamada.rida.321@proton.me</p>
+`;
+
+</script>
+<script>
+window.LETTER=window.LETTER||{};
+window.LETTER.sv=`
+<p><b>Motivationsbrev – Motivaatiokirje</b><br>Rida Hamada<br>Program: Bachelor of Engineering, informationsteknik – Smart Devices and Solutions (SDS)<br>Centria University of Applied Sciences, Kokkola<br>Avser: gemensam ansökan / löpande antagning 2027</p>
+<p>Bästa antagningsteam och team för internationella frågor vid Centria University of Applied Sciences,</p>
+<p>Mitt namn är Rida Hamada. Jag är marockansk elektroniktekniker inom automationsteknik, erkänd av IHK-FOSA i Tyskland, och jag skriver för att söka till Bachelor of Engineering i informationsteknik, inriktning Smart Devices and Solutions, med start hösten 2027.</p>
+<p>Jag träffade er delegation personligen i Marocko, och det mötet är anledningen till detta brev.</p>
+<p>Den 8 november 2026, på Hotel Marriott Rabat, deltog jag i Centrias presentation i Marocko. Jag fick lyssna på Francesca Cucinotta, chef för internationella frågor vid Centria University of Applied Sciences, och hennes kollegor. Jag vill uppriktigt tacka dem för den tydliga, ärliga och mycket praktiska informationen om studier i Kokkola, om terminsavgifter, stipendier, studentlivet och om vad Centria verkligen förväntar sig av internationella studenter.</p>
+<p>Min badgekod för evenemanget var ZS7016.</p>
+<p>Den presentationen ändrade min plan. Före den dagen tittade jag på många universitet. Efter att ha lyssnat på fru Cucinotta och hennes team förstod jag att Centria inte är ett teoretiskt universitet. Det är ett praktiskt universitet, med verkliga projekt, verkliga laboratorier och verkligt samarbete med företag. Det är precis vad jag behöver.</p>
+<p>Jag förberedde också, före evenemanget, en detaljerad utvärderingsenkät om mitt fall, mina kvalifikationer och hur väl mitt tyska yrkeserkännande passar med det finska systemet. Fru Cucinotta och hennes kollegor besvarade vänligt mina frågor i Rabat. Enkäten med deras svar ingår i min ansökan (se knappen Enkät), och min kompletta yrkesportfölj finns via knappen Portfölj.</p>
+<h3>Vem jag är</h3>
+<p>Jag är 30 år och kommer från Safi i Marocko. Jag har Diplôme du Baccalauréat i fysikaliska vetenskaper, Diplôme de Technicien Spécialisé i elmekanik från Institute of Applied Technology i Casablanca (2020) och ett tyskt yrkeserkännande som Elektroniker für Automatisierungstechnik från IHK-FOSA (2024), med en Qualifizierungsplan från IHK Berlin (2025).</p>
+<p>Jag arbetade som elektriker på Actemium / GMCE II i Jorf Lasfar (11/2021 – 09/2022) i industriprojekt för bland annat OCP Group, TAQA Morocco och STMicroelectronics. Jag driftsatte turbiner och kraftvärmeverk, installerade elsystem upp till 6,6 kV, kalibrerade ställdon och analysatorer, arbetade med HART-protokollet, testade mellanspänningsställverk (1–36 kV) och integrerade SCADA-system. Dessförinnan arbetade jag som kontrollrumstekniker på Univers Acier med DCS och HMI, och som tekniker för industriell märkning på SE Solution.</p>
+<p>Parallellt har jag genomfört kontinuerlig utbildning inom cybersäkerhet (Cisco Networking Academy, 2025), Microsoft Azure-900, informations- och datorsäkerhet (IAEA, 2025) samt internationell varuhandelsstatistik (UNCTAD / UNSD / WTO, 2025).</p>
+<p>Mitt betyg i Baccalauréat i fysikaliska vetenskaper är under 12/20. Jag säger detta ärligt, eftersom jag inte vill söka via betygsbaserat urval där betygen avgör. Jag vill söka via UAS International Exam, eftersom provet mäter vad jag kan idag, inte vilket betyg jag hade 2016.</p>
+<p>Efter fem års industriarbete, kontinuerlig utbildning och tyskt yrkeserkännande är min tekniska nivå idag mycket starkare än mitt skolbetyg. Jag har levt begreppen sensorer, styrsystem, automation och processövervakning i en verklig anläggning, inte bara i ett klassrum.</p>
+<h3>Min plan för yrkeserkännande: EU-systemet jämfört med det finska systemet</h3>
+<p>Detta är den centrala delen av min ansökan, och det var huvudämnet i enkäten som jag diskuterade med fru Cucinotta och hennes kollegor i Rabat.</p>
+<p>Jag har noggrant studerat hur mina kvalifikationer bedöms i Europeiska unionens system och hur de bedöms i det finska systemet. Jag vill presentera detta tydligt, så att min ansökan inte missförstås.</p>
+<p>I Europeiska unionens system finns tre olika typer av erkännande:</p>
+<ul>
+<li><b>Akademiskt erkännande</b> – beslutas av universitetet självt. Det ger rätt att antas till ett studieprogram och att få tidigare lärande erkänt.</li>
+<li><b>Yrkeserkännande</b> – beslutas av staten för reglerade yrken enligt EU-direktiv 2005/36/EG. I Finland beslutas det av OPH, Utbildningsstyrelsen, som också är Finlands ENIC-NARIC-centrum.</li>
+<li><b>Erkännande på arbetsmarknaden</b> – beslutas av arbetsgivare, utifrån förtroende för kvalifikationen och den verkliga erfarenheten.</li>
+</ul>
+<p>I det finska systemet gäller samma uppdelning, men med en viktig särskilthet: i Finland ansvarar högskolorna själva för akademiskt erkännande. OPH beslutar inte om antagning. OPH beslutar om yrkeserkännande för reglerade yrken, efter bosättning i Finland. Därför söker jag först till Centria och inte till OPH.</p>
+<h3>Mina kvalifikationer, bedömda i båda systemen</h3>
+<p><b>1. Diplôme du Baccalauréat, fysikaliska vetenskaper – EQF 4.</b> I EU-systemet, enligt Lissabonkonventionen om erkännande, är detta en gymnasiekvalifikation som ger tillträde till högre utbildning. I Finland accepteras den som rätt att söka, men mitt betyg under 12/20 kvalificerar mig inte för betygsbaserat urval. Därför söker jag via UAS-provet. Den ger 0 ECTS, eftersom den är en behörighetsgivande kvalifikation och inte en universitetskvalifikation.</p>
+<p><b>2. Diplôme de Technicien Spécialisé, elmekanik – EQF 5, Bac+2.</b> I EU-systemet är detta en kort högre yrkesutbildning. I Finland är den jämförbar med delstudier vid en yrkeshögskola, men är ingen kandidatexamen. Den ger automatiskt 0 ECTS. Enligt Centrias principer för erkännande av tidigare lärande (RPL / AHOT) kan den dock ge 10–20 ECTS efter inskrivning, om jag visar kompetens som motsvarar examen inom elektronik, elmekanik och automation.</p>
+<p><b>3. IHK-FOSA, Elektroniker für Automatisierungstechnik – EQF 4 / DQR 4.</b> Detta är min starkaste yrkeskvalifikation. I det tyska systemet är den registrerad i DQR på nivå 4, motsvarande 3,5 års tysk dual yrkesutbildning med cirka 4 200 timmars teoretisk och praktisk utbildning, certifierad av BIBB och IHK. I EU-systemet erkänns kvalifikationen som yrkeskvalifikation inom EU, men den omvandlas inte automatiskt till en finsk kvalifikation. Den ger inte ECTS automatiskt, eftersom ECTS gäller enbart universitet och ECVET yrkesutbildning. I det finska systemet måste kvalifikationen bedömas i två steg:</p>
+<ul>
+<li><b>Akademiskt steg:</b> Centria avgör genom RPL hur många ECTS som kan erkännas. I mitt fall förväntar jag mig 15–30 ECTS, särskilt för praktisk utbildning och inbyggda system, om jag presenterar en stark RPL-portfölj med arbetsintyg, IHK-dokument och en kompetensdemonstration.</li>
+<li><b>Yrkessteget:</b> OPH avgör, efter att jag blivit bosatt i Finland, om mitt yrke är reglerat i Finland och om jag behöver ett formellt erkännandebeslut för att arbeta i det. Inom IT och automation är de flesta tjänster inte reglerade, och arbetsgivaren avgör. Därför blir min finska examen från Centria, tillsammans med finsk arbetslivserfarenhet, mitt verkliga yrkeserkännande i Finland.</li>
+</ul>
+<p><b>4. Qualifizierungsplan, IHK Berlin, 2025 – EQF 4.</b> Detta dokument är mycket viktigt för mitt fall. Det visar att jag har bedömts av det tyska systemet och att jag har identifierat exakt vad jag behöver komplettera: Digitalisierung, Datenschutz, Informationssicherheit. Det är precis de ämnen som Smart Devices and Solutions undervisar i på Centria: digitalisering, dataskydd och informationssäkerhet. Det visar att Centria är den naturliga fortsättningen på min tyska kvalifikation och inte en upprepning av den.</p>
+<p><b>5. Certifikat från Cisco, Azure-900, IAEA, UNCTAD – ingen EQF-nivå, 0 ECTS.</b> I båda systemen är dessa intyg om kontinuerlig utbildning, inte statliga kvalifikationer. De ger inte ECTS automatiskt. De stöder dock RPL för grundläggande säkerhets- och molnmoduler och visar mitt kontinuerliga lärande inom cybersäkerhet, moln och datasäkerhet.</p>
+<p><b>Min slutsats om erkännande:</b></p>
+<ul>
+<li>Vid start: 0 ECTS erkänns automatiskt</li>
+<li>Efter inskrivning, genom RPL: 15–30 ECTS kan erkännas, vilket motsvarar en hel termin</li>
+<li>Efter examen: B.Eng. informationsteknik, 240 ECTS, EQF 6, fullt erkänd i hela Europa</li>
+</ul>
+<p>Därför behöver jag Centria. Tyskland gav mig ett yrke. Finland, genom Centria, ger mig en examen och ett yrke. IHK-kvalifikationen ensam håller mig kvar som tekniker. En kandidatexamen från Centria gör mig till ingenjör, med finsk examen, finsk erfarenhet och en europeisk kvalifikation på EQF 6.</p>
+<h3>Varför jag väljer Finland idag och inte Tyskland</h3>
+<p>Jag vill säga detta tydligt, eftersom det också var en del av min enkät i Rabat.</p>
+<p>Jag är inte längre intresserad av att fortsätta min utbildningsväg i Tyskland. Jag respekterar det tyska systemet mycket och är tacksam för erkännandet från IHK-FOSA. Men idag vill jag till Finland.</p>
+<p>Jag vill till Finland på grund av utbildningens kvalitet i Nordeuropa, det praktiska projektbaserade lärandet på Centria, den välkomnande kultur jag mötte hos er delegation i Marocko och Centrias öppna inställning till marockanska studenter.</p>
+<p>I Rabat kände jag mig inte behandlad som ett nummer. Jag kände mig behandlad som en blivande student, med verkliga frågor och ett verkligt projekt. Fru Cucinotta och hennes kollegor svarade ärligt, även när svaren var svåra, om avgifter, språk, arbete och livet i Kokkola. Den ärligheten gav mig förtroende.</p>
+<p>Jag välkomnar allt stöd ni kan erbjuda för att hjälpa mig fortsätta min utbildning i Finland. Jag ber inte om undantag från reglerna. Jag ber bara om en rättvis bedömning genom UAS-provet och möjligheten att bevisa mitt värde genom mina studier.</p>
+<p>Jag har en mycket stor ambition att fortsätta min utbildning och min kreativitet vid detta starka universitet i Nordeuropa. Jag vill inte stanna som tekniker. Jag vill bli en ingenjör som utformar intelligenta system, arbetar i internationella team och bidrar till finsk industri och forskning.</p>
+<h3>Varför Smart Devices and Solutions, och varför Centria?</h3>
+<p>Jag valde Smart Devices and Solutions eftersom det är det enda programmet som kopplar ihop det jag redan kan med det jag behöver lära mig.</p>
+<p><b>Vad jag kan:</b> sensorer, ställdon, PLC, DCS, HMI, SCADA, industriella nätverk, elsäkerhet och processoptimering.</p>
+<p><b>Vad jag vill lära mig på Centria:</b> IoT-arkitekturer, inbyggda system, edge computing, dataanalys, datavisualisering, tillämpad AI samt hur man utformar, prototypar och integrerar intelligenta uppkopplade system i verkliga industriella och digitala miljöer.</p>
+<p>Särskilt tre saker som jag hörde i Rabat och på er webbplats övertygade mig:</p>
+<ul>
+<li><b>Centria IT Lab</b> – en gemensam miljö där studenter, lärare, forskare och företag arbetar tillsammans med verklig programvara, smarta system, cybersäkerhet och molnprojekt. Det är där jag vill lära mig.</li>
+<li><b>Projektbaserat lärande</b> – studenterna arbetar i tvärvetenskapliga team med verkliga kundproblem, med agila metoder och branschverktyg. Så arbetade jag just på Actemium.</li>
+<li><b>Internationell miljö</b> – cirka 130 partneruniversitet, studenter från omkring 40 länder och möjlighet till utbytestermin eller praktik utomlands via Erasmus+.</li>
+</ul>
+<p>Jag vill inte ha en rent teoretisk examen. Jag vill ha en examen som gör mig redo att arbeta som IoT-ingenjör, utvecklare av inbyggda system, ingenjör för smarta system eller utvecklare av AI- och datalösningar.</p>
+<h3>Vad jag tar med mig till Centria</h3>
+<p>Jag kommer inte som en student som bara har studerat teori. Jag kommer med industriell erfarenhet som de flesta kandidatstudenter inte har.</p>
+<p>Under mina studier skulle jag vilja utveckla ett forskningsprojekt inom industriell säkerhet och inbyggda system, under handledning av era lärare och i full överensstämmelse med EU:s dataskyddsregler (GDPR) och principerna för ansvarsfull AI. Mitt långsiktiga projekt, som jag kallar IMPERIUM RH, är ingen kommersiell produkt. Jag ser det som ett akademiskt forskningsprojekt: ett specialiserat, öppet verktyg för utbildning i industriell instrumentering och arbetsplatssäkerhet, utvecklat i ert laboratorium, med ett starkt team, för forskning och utbildning.</p>
+<p>Jag är redo att arbeta i tvärvetenskapliga team, att dela min industriella erfarenhet med yngre studenter och att bidra till projekt som kopplar Centria till verkliga företag.</p>
+<h3>Min förståelse av avgifter, stipendier och uppehållstillstånd</h3>
+<p>Jag har noggrant läst er information om terminsavgifter och stipendier, inklusive den information som gavs i Rabat. Jag förstår att:</p>
+<ul>
+<li>Terminsavgiften för kandidatprogram för studenter utanför EU/EES är 9 500 EUR per läsår för studenter som börjar 2027/2028.</li>
+<li>Avgiften ska betalas i sin helhet via Flywire och kan inte delbetalas under första året.</li>
+<li>Early Bird-stipendiet på –25 % kan erhållas om jag accepterar det villkorade erbjudandet och betalar inom 14 dagar efter meddelandet.</li>
+<li>Progress-stipendiet på –20 % kan erhållas om jag avklarar 60 ECTS per år och ansöker mellan 1 och 31 oktober.</li>
+<li>Academic Performance-stipendiet på –100 % tilldelas av en urvalskommitté, en gång per examen, till studenter med utmärkta framsteg och GPA.</li>
+<li>Stipendiet för finska språket på 2 000 EUR kan erhållas om jag avlägger YKI i finska på nivå B1.1 under mina studier på Centria.</li>
+</ul>
+<p>Jag förstår också att jag för ett finskt uppehållstillstånd för studier måste visa tillräckliga medel för levnadskostnader, för närvarande 800 EUR per månad, 9 600 EUR för ett år, på mitt eget bankkonto, utöver terminsavgiften, samt privat sjukförsäkring.</p>
+<p>Jag är medveten om dessa krav och arbetar på att säkra finansieringen för att uppfylla dem. Mitt mål är att avklara 60 ECTS varje år, lära mig finska till nivå B1.1 och söka Progress- och Performance-stipendierna genom akademisk excellens, inte genom ett undantag.</p>
+<p>Jag är för närvarande arbetslös och min budget är begränsad. Jag ber inte om undantag från reglerna om terminsavgift, eftersom jag förstår att undantagslistan är sluten och baseras på uppehållstillstånd och EU/EES-medborgarskap. Jag ber bara om möjligheten att bedömas rättvist genom UAS-provet och att bevisa mitt värde genom mina studier på Centria.</p>
+<h3>Min framtida plan i Finland</h3>
+<p>Mitt mål efter examen är att arbeta i Finland inom IoT, automation och smarta system och att bidra till finsk industri. Min plan:</p>
+<ul>
+<li>Avklara 240 ECTS i Smart Devices and Solutions</li>
+<li>Genomföra praktik och mitt examensarbete på 15 ECTS i ett finskt företag</li>
+<li>Ansöka om erkännande av tidigare lärande (RPL / AHOT) för min industriella erfarenhet och IHK-kvalifikation, i enlighet med Centrias principer</li>
+<li>Lära mig finska, delta i integrationsaktiviteter och ansöka om Erasmus+-utbyte eller praktik utomlands under mina studier</li>
+<li>Efter examen ansöka om uppehållstillstånd för att söka arbete i Finland, i enlighet med finsk lag</li>
+</ul>
+<p>Jag är redo att bo kvar i Kokkola, studera på heltid, avklara 60 ECTS per år och integreras i det finska akademiska och yrkesmässiga livet.</p>
+<h3>Avslutning</h3>
+<p>Tack ännu en gång till fru Francesca Cucinotta och hennes kollegor för att ni kom till Marocko och gav oss ärlig och detaljerad information på Hotel Marriott Rabat den 8 november 2026. Tack för den välkomnande kulturen, för den öppna inställningen till marockanska studenter och för den utbildningskvalitet som Centria representerar i Nordeuropa. Det mötet gav mig klarheten att välja Centria och att välja Finland idag.</p>
+<p>Jag har en mycket stor ambition att fortsätta min utbildning och min kreativitet vid ert universitet. Jag ber respektfullt att ni överväger min ansökan till Bachelor of Engineering i informationsteknik, Smart Devices and Solutions, genom UAS International Exam.</p>
+<p>Jag står till förfogande för alla ytterligare dokument, intervjuer eller prov som ni kan kräva.</p>
+<p>Med vänliga hälsningar,<br><b>Rida Hamada</b><br>Safi, Marocko<br>E-post: Hamada.rida.321@proton.me</p>
+`;
+
+</script>
+<script>
+window.LETTER=window.LETTER||{};
+window.LETTER.de=`
+<p><b>Motivationsschreiben – Motivaatiokirje</b><br>Rida Hamada<br>Studiengang: Bachelor of Engineering, Informationstechnik – Smart Devices and Solutions (SDS)<br>Centria University of Applied Sciences, Kokkola<br>Betreff: Gemeinsame Bewerbung / laufende Zulassung 2027</p>
+<p>Sehr geehrtes Zulassungsteam, sehr geehrtes Team für Internationale Angelegenheiten der Centria University of Applied Sciences,</p>
+<p>mein Name ist Rida Hamada. Ich bin marokkanischer Elektroniker für Automatisierungstechnik, von der IHK-FOSA in Deutschland anerkannt, und bewerbe mich für den Bachelor of Engineering in Informationstechnik, Vertiefung Smart Devices and Solutions, mit Beginn im Herbst 2027.</p>
+<p>Ich habe Ihre Delegation persönlich in Marokko getroffen, und diese Begegnung ist der Grund für dieses Schreiben.</p>
+<p>Am 8. November 2026 habe ich im Hotel Marriott Rabat die Präsentation von Centria in Marokko besucht. Ich hatte die Gelegenheit, Frau Francesca Cucinotta, Director, International Affairs der Centria University of Applied Sciences, und ihren Kolleginnen und Kollegen zuzuhören. Ich danke ihnen aufrichtig für die klaren, ehrlichen und sehr praktischen Informationen über das Studium in Kokkola, über Studiengebühren, Stipendien, das Studentenleben und darüber, was Centria von internationalen Studierenden wirklich erwartet.</p>
+<p>Mein Badge-Code bei dieser Veranstaltung war ZS7016.</p>
+<p>Diese Präsentation hat meinen Plan verändert. Vor jenem Tag habe ich mir viele Hochschulen angesehen. Nachdem ich Frau Cucinotta und ihrem Team zugehört hatte, verstand ich, dass Centria keine theoretische Hochschule ist. Sie ist eine praxisnahe Hochschule mit echten Projekten, echten Laboren und echter Zusammenarbeit mit Unternehmen. Genau das brauche ich.</p>
+<p>Ich habe außerdem vor der Veranstaltung einen ausführlichen Bewertungsfragebogen zu meinem Fall, meinen Qualifikationen und zur Vereinbarkeit meiner deutschen Berufsanerkennung mit dem finnischen System vorbereitet. Frau Cucinotta und ihre Kolleginnen und Kollegen haben meine Fragen in Rabat freundlich beantwortet. Dieser Fragebogen mit ihren Antworten gehört zu meinen Bewerbungsunterlagen (siehe Schaltfläche Fragebogen), und mein vollständiges Berufsportfolio ist über die Schaltfläche Portfolio erreichbar.</p>
+<h3>Wer ich bin</h3>
+<p>Ich bin 30 Jahre alt und komme aus Safi in Marokko. Ich habe das Diplôme du Baccalauréat in Physikalischen Wissenschaften, ein Diplôme de Technicien Spécialisé in Elektromechanik vom Institute of Applied Technology in Casablanca (2020) und eine deutsche Berufsanerkennung als Elektroniker für Automatisierungstechnik von der IHK-FOSA (2024) mit einem Qualifizierungsplan der IHK Berlin (2025).</p>
+<p>Ich arbeitete als Elektriker bei Actemium / GMCE II in Jorf Lasfar (11/2021 – 09/2022) in Industrieprojekten unter anderem für OCP Group, TAQA Morocco und STMicroelectronics. Ich habe Turbinen und Blockheizkraftwerke in Betrieb genommen, Elektrosysteme bis 6,6 kV installiert, Stellglieder und Analysatoren kalibriert, mit dem HART-Protokoll gearbeitet, Mittelspannungsschaltanlagen (1–36 kV) geprüft und SCADA-Systeme integriert. Zuvor war ich Leitstandstechniker bei Univers Acier und betreute DCS und HMI, sowie Techniker für industrielle Kennzeichnung bei SE Solution.</p>
+<p>Parallel habe ich mich kontinuierlich weitergebildet in Cybersicherheit (Cisco Networking Academy, 2025), Microsoft Azure-900, Informations- und Computersicherheit (IAEA, 2025) sowie internationaler Warenhandelsstatistik (UNCTAD / UNSD / WTO, 2025).</p>
+<p>Meine Baccalauréat-Note in Physikalischen Wissenschaften liegt unter 12/20. Ich sage das ehrlich, denn ich möchte mich nicht über die zeugnisbasierte Auswahl bewerben, bei der Noten entscheiden. Ich möchte mich über die UAS International Exam bewerben, denn diese Prüfung misst, was ich heute kann, und nicht meine Note von 2016.</p>
+<p>Nach fünf Jahren Industriearbeit, kontinuierlicher Weiterbildung und deutscher Berufsanerkennung ist mein technisches Niveau heute deutlich stärker als meine Schulnote. Ich habe die Konzepte von Sensoren, Steuerungen, Automatisierung und Prozessüberwachung in einer echten Anlage gelebt, nicht nur im Klassenzimmer.</p>
+<h3>Mein Anerkennungsplan: EU-System und finnisches System</h3>
+<p>Dies ist der zentrale Teil meiner Bewerbung, und es war das Hauptthema des Fragebogens, den ich mit Frau Cucinotta und ihren Kolleginnen und Kollegen in Rabat besprochen habe.</p>
+<p>Ich habe sorgfältig untersucht, wie meine Qualifikationen im System der Europäischen Union und im finnischen System bewertet werden. Ich möchte das klar darstellen, damit meine Unterlagen nicht missverstanden werden.</p>
+<p>Im System der Europäischen Union gibt es drei verschiedene Arten der Anerkennung:</p>
+<ul>
+<li><b>Akademische Anerkennung</b> – wird von der Hochschule selbst entschieden. Sie gibt das Recht, in einen Studiengang einzutreten und früheres Lernen anerkennen zu lassen.</li>
+<li><b>Berufliche Anerkennung</b> – wird vom Staat für reglementierte Berufe nach der EU-Richtlinie 2005/36/EG entschieden. In Finnland entscheidet darüber die OPH, die Finnische Nationale Agentur für Bildung, die zugleich das finnische ENIC-NARIC-Zentrum ist.</li>
+<li><b>Anerkennung am Arbeitsmarkt</b> – wird von Arbeitgebern entschieden, auf Grundlage des Vertrauens in die Qualifikation und die tatsächliche Erfahrung.</li>
+</ul>
+<p>Im finnischen System gilt dieselbe Unterscheidung, mit einer wichtigen Besonderheit: In Finnland sind die Hochschulen selbst für die akademische Anerkennung zuständig. Die OPH entscheidet nicht über die Zulassung. Die OPH entscheidet über die berufliche Anerkennung für reglementierte Berufe, nach dem Wohnsitz in Finnland. Deshalb bewerbe ich mich zuerst bei Centria und nicht bei der OPH.</p>
+<h3>Meine Qualifikationen, in beiden Systemen bewertet</h3>
+<p><b>1. Diplôme du Baccalauréat, Physikalische Wissenschaften – EQF 4.</b> Im EU-System ist dies nach dem Lissabonner Anerkennungsübereinkommen ein Sekundarabschluss, der Zugang zur Hochschulbildung gibt. In Finnland wird er als Bewerbungsberechtigung akzeptiert, aber meine Note unter 12/20 qualifiziert mich nicht für die zeugnisbasierte Auswahl. Deshalb bewerbe ich mich über die UAS-Prüfung. Er ergibt 0 ECTS, da er eine Zugangsqualifikation und keine Hochschulqualifikation ist.</p>
+<p><b>2. Diplôme de Technicien Spécialisé, Elektromechanik – EQF 5, Bac+2.</b> Im EU-System ist dies eine höhere berufliche Qualifikation des Kurzzyklus. In Finnland ist sie mit Teilstudien an einer Fachhochschule vergleichbar, aber kein Bachelorabschluss. Sie ergibt automatisch 0 ECTS. Nach den Grundsätzen von Centria zur Anerkennung früher erworbener Kompetenzen (RPL / AHOT) kann sie nach der Einschreibung jedoch 10–20 ECTS ergeben, wenn ich Kompetenzen nachweise, die dem Abschluss in Elektronik, Elektromechanik und Automatisierung entsprechen.</p>
+<p><b>3. IHK-FOSA, Elektroniker für Automatisierungstechnik – EQF 4 / DQR 4.</b> Dies ist meine stärkste berufliche Qualifikation. Im deutschen System ist sie im DQR auf Niveau 4 eingeordnet und entspricht 3,5 Jahren deutscher dualer Berufsausbildung mit etwa 4.200 Stunden theoretischer und praktischer Ausbildung, bescheinigt durch BIBB und IHK. Im EU-System wird diese Qualifikation EU-weit als berufliche Qualifikation anerkannt, wird aber nicht automatisch in eine finnische Qualifikation umgewandelt. Sie ergibt nicht automatisch ECTS, da ECTS nur für Hochschulen und ECVET für die Berufsbildung gilt. Im finnischen System muss diese Qualifikation in zwei Schritten bewertet werden:</p>
+<ul>
+<li><b>Akademischer Schritt:</b> Centria entscheidet über RPL, wie viele ECTS anerkannt werden können. In meinem Fall erwarte ich 15–30 ECTS, insbesondere für die praktische Ausbildung und eingebettete Systeme, wenn ich ein starkes RPL-Portfolio mit Arbeitszeugnissen, IHK-Dokumenten und einem Kompetenznachweis vorlege.</li>
+<li><b>Beruflicher Schritt:</b> Die OPH entscheidet, nachdem ich in Finnland ansässig bin, ob mein Beruf in Finnland reglementiert ist und ob ich für die Ausübung eine formale Anerkennungsentscheidung brauche. In IT und Automatisierung sind die meisten Stellen nicht reglementiert, und der Arbeitgeber entscheidet. Mein finnischer Abschluss von Centria in Verbindung mit finnischer Berufserfahrung wird daher meine eigentliche berufliche Anerkennung in Finnland sein.</li>
+</ul>
+<p><b>4. Qualifizierungsplan, IHK Berlin, 2025 – EQF 4.</b> Dieses Dokument ist für meinen Fall sehr wichtig. Es zeigt, dass ich vom deutschen System bewertet wurde und genau festgestellt habe, was ich noch ergänzen muss: Digitalisierung, Datenschutz, Informationssicherheit. Genau diese Fächer vermittelt Smart Devices and Solutions an der Centria: Digitalisierung, Datenschutz und Informationssicherheit. Das beweist, dass Centria die natürliche Fortsetzung meiner deutschen Qualifikation ist und keine Wiederholung.</p>
+<p><b>5. Zertifikate Cisco, Azure-900, IAEA, UNCTAD – kein EQF-Niveau, 0 ECTS.</b> In beiden Systemen sind dies Weiterbildungsnachweise, keine staatlichen Qualifikationen. Sie ergeben nicht automatisch ECTS. Sie stützen jedoch RPL für grundlegende Sicherheits- und Cloud-Module und belegen meine kontinuierliche Weiterbildung in Cybersicherheit, Cloud und Datensicherheit.</p>
+<p><b>Mein Fazit zur Anerkennung:</b></p>
+<ul>
+<li>Bei Studienbeginn: 0 ECTS automatisch anerkannt</li>
+<li>Nach der Einschreibung über RPL: 15–30 ECTS möglicherweise anerkannt, das entspricht einem vollen Semester</li>
+<li>Nach dem Abschluss: B.Eng. Informationstechnik, 240 ECTS, EQF 6, in ganz Europa voll anerkannt</li>
+</ul>
+<p>Deshalb brauche ich Centria. Deutschland hat mir einen Beruf gegeben. Finnland wird mir über Centria einen Abschluss und einen Beruf geben. Die IHK-Qualifikation allein lässt mich Techniker bleiben. Ein Bachelor von Centria macht mich zum Ingenieur, mit finnischem Abschluss, finnischer Erfahrung und einer europäischen Qualifikation auf EQF 6.</p>
+<h3>Warum ich heute Finnland wähle und nicht Deutschland</h3>
+<p>Ich möchte dies klar sagen, denn es war auch Teil meines Fragebogens in Rabat.</p>
+<p>Ich bin nicht mehr daran interessiert, meinen Bildungsweg mit Deutschland fortzusetzen. Ich respektiere das deutsche System sehr und bin dankbar für die Anerkennung durch die IHK-FOSA. Aber heute möchte ich Finnland.</p>
+<p>Ich möchte Finnland wegen der Qualität der Bildung in Nordeuropa, wegen des praxisnahen, projektbasierten Lernens an der Centria, wegen der einladenden Kultur, die ich bei Ihrer Delegation in Marokko erlebt habe, und wegen der Offenheit von Centria gegenüber marokkanischen Studierenden.</p>
+<p>In Rabat hatte ich nicht das Gefühl, als Nummer behandelt zu werden. Ich fühlte mich als künftiger Student behandelt, mit echten Fragen und einem echten Projekt. Frau Cucinotta und ihre Kolleginnen und Kollegen haben ehrlich geantwortet, auch wenn die Antworten schwierig waren, über Gebühren, Sprache, Arbeit und das Leben in Kokkola. Diese Ehrlichkeit hat mir Vertrauen gegeben.</p>
+<p>Ich begrüße jede Unterstützung, die Sie mir anbieten können, um meine Ausbildung in Finnland fortzusetzen. Ich bitte nicht um eine Ausnahme von den Regeln. Ich bitte nur um eine faire Bewertung über die UAS-Prüfung und die Gelegenheit, meinen Wert durch mein Studium zu beweisen.</p>
+<p>Ich habe einen sehr, sehr großen Ehrgeiz, meine Ausbildung und meine Kreativität an dieser starken Hochschule in Nordeuropa fortzusetzen. Ich möchte nicht beim Techniker stehen bleiben. Ich möchte Ingenieur werden, der intelligente Systeme entwirft, in internationalen Teams arbeitet und zur finnischen Industrie und Forschung beiträgt.</p>
+<h3>Warum Smart Devices and Solutions, und warum Centria?</h3>
+<p>Ich habe Smart Devices and Solutions gewählt, weil es der einzige Studiengang ist, der das, was ich schon weiß, mit dem verbindet, was ich noch lernen muss.</p>
+<p><b>Was ich weiß:</b> Sensoren, Aktoren, SPS, DCS, HMI, SCADA, Industrienetzwerke, elektrische Sicherheit und Prozessoptimierung.</p>
+<p><b>Was ich an der Centria lernen möchte:</b> IoT-Architekturen, eingebettete Systeme, Edge Computing, Datenanalyse, Datenvisualisierung, angewandte KI und wie man intelligente vernetzte Systeme in realen industriellen und digitalen Umgebungen entwirft, prototypisch umsetzt und integriert.</p>
+<p>Besonders überzeugt haben mich drei Dinge, die ich in Rabat und auf Ihrer Website gehört habe:</p>
+<ul>
+<li><b>Centria IT Lab</b> – eine gemeinsame Umgebung, in der Studierende, Lehrende, Forschende und Unternehmen an echter Software, smarten Systemen, Cybersicherheit und Cloud-Projekten zusammenarbeiten. Dort möchte ich lernen.</li>
+<li><b>Projektbasiertes Lernen</b> – Studierende arbeiten in multidisziplinären Teams an echten Kundenproblemen, mit agilen Methoden und Industriewerkzeugen. Genau so habe ich bei Actemium gearbeitet.</li>
+<li><b>Internationales Umfeld</b> – rund 130 Partnerhochschulen, Studierende aus etwa 40 Ländern und die Möglichkeit eines Austauschsemesters oder Praktikums im Ausland über Erasmus+.</li>
+</ul>
+<p>Ich möchte keinen rein theoretischen Abschluss. Ich möchte einen Abschluss, der mich befähigt, als IoT-Ingenieur, Entwickler eingebetteter Systeme, Ingenieur für smarte Systeme oder Entwickler von KI- und Datenlösungen zu arbeiten.</p>
+<h3>Was ich an die Centria mitbringe</h3>
+<p>Ich werde nicht als Student kommen, der nur Theorie studiert hat. Ich komme mit Industrieerfahrung, die die meisten Bachelorstudierenden nicht haben.</p>
+<p>Während des Studiums möchte ich unter Betreuung Ihrer Lehrenden ein Forschungsprojekt im Bereich Arbeitssicherheit in der Industrie und eingebettete Systeme entwickeln, in voller Übereinstimmung mit den EU-Datenschutzregeln (DSGVO) und den Grundsätzen verantwortungsvoller KI. Mein langfristiges Projekt, das ich IMPERIUM RH nenne, ist kein kommerzielles Produkt. Ich sehe es als akademisches Forschungsprojekt: ein spezialisiertes, offenes Werkzeug für die Ausbildung in industrieller Messtechnik und Arbeitssicherheit, entwickelt in Ihrem Labor, mit einem starken Team, für Forschung und Lehre.</p>
+<p>Ich bin bereit, in multidisziplinären Teams zu arbeiten, meine Industrieerfahrung mit jüngeren Studierenden zu teilen und zu Projekten beizutragen, die Centria mit echten Unternehmen verbinden.</p>
+<h3>Mein Verständnis von Gebühren, Stipendien und Aufenthalt</h3>
+<p>Ich habe Ihre Informationen zu Studiengebühren und Stipendien sorgfältig gelesen, einschließlich der in Rabat gegebenen Informationen. Ich verstehe, dass:</p>
+<ul>
+<li>Die Studiengebühr für Bachelorstudiengänge für Studierende aus Nicht-EU/EWR-Ländern 9.500 EUR pro Studienjahr für Studienbeginner 2027/2028 beträgt.</li>
+<li>Die Gebühr vollständig über Flywire gezahlt werden muss und im ersten Jahr nicht in Raten gezahlt werden kann.</li>
+<li>Das Early-Bird-Stipendium von –25 % verfügbar ist, wenn ich das bedingte Angebot annehme und innerhalb von 14 Tagen nach der Benachrichtigung zahle.</li>
+<li>Das Progress-Stipendium von –20 % verfügbar ist, wenn ich 60 ECTS pro Jahr abschließe und mich zwischen dem 1. und 31. Oktober bewerbe.</li>
+<li>Das Academic-Performance-Stipendium von –100 % von einem Auswahlgremium einmal pro Abschluss an Studierende mit hervorragendem Fortschritt und GPA vergeben wird.</li>
+<li>Das Stipendium für die finnische Sprache von 2.000 EUR verfügbar ist, wenn ich während meines Studiums an der Centria den YKI-Test Finnisch auf Niveau B1.1 ablege.</li>
+</ul>
+<p>Ich verstehe auch, dass ich für eine finnische Aufenthaltserlaubnis zum Studium ausreichende Mittel für den Lebensunterhalt nachweisen muss, derzeit 800 EUR pro Monat, 9.600 EUR für ein Jahr, auf meinem eigenen Bankkonto, zusätzlich zur Studiengebühr, sowie eine private Krankenversicherung.</p>
+<p>Ich kenne diese Anforderungen und arbeite daran, die Finanzierung zu sichern. Mein Ziel ist es, jedes Jahr 60 ECTS abzuschließen, Finnisch bis Niveau B1.1 zu lernen und mich für die Progress- und Performance-Stipendien durch akademische Leistung zu bewerben, nicht durch eine Ausnahme.</p>
+<p>Ich bin derzeit arbeitslos und mein Budget ist begrenzt. Ich bitte nicht um eine Ausnahme von den Studiengebührenregeln, denn ich verstehe, dass die Ausnahmeliste geschlossen ist und auf Aufenthaltstiteln und der EU/EWR-Staatsbürgerschaft beruht. Ich bitte nur um die Möglichkeit, über die UAS-Prüfung fair bewertet zu werden und meinen Wert durch mein Studium an der Centria zu beweisen.</p>
+<h3>Mein Zukunftsplan in Finnland</h3>
+<p>Mein Ziel nach dem Abschluss ist es, in Finnland im Bereich IoT, Automatisierung und smarte Systeme zu arbeiten und zur finnischen Industrie beizutragen. Mein Plan:</p>
+<ul>
+<li>240 ECTS in Smart Devices and Solutions abschließen</li>
+<li>Praktikum und meine Abschlussarbeit mit 15 ECTS in einem finnischen Unternehmen absolvieren</li>
+<li>RPL / AHOT für meine Industrieerfahrung und die IHK-Qualifikation beantragen, gemäß den Grundsätzen von Centria zur Anerkennung früheren Lernens</li>
+<li>Finnisch lernen, an Integrationsaktivitäten teilnehmen und mich während des Studiums für einen Erasmus+-Austausch oder ein Praktikum im Ausland bewerben</li>
+<li>Nach dem Abschluss eine Aufenthaltserlaubnis zur Arbeitssuche in Finnland nach finnischem Recht beantragen</li>
+</ul>
+<p>Ich bin bereit, in Kokkola zu bleiben, in Vollzeit zu studieren, jährlich 60 ECTS abzuschließen und mich in das finnische akademische und berufliche Leben zu integrieren.</p>
+<h3>Schluss</h3>
+<p>Ich danke nochmals Frau Francesca Cucinotta und ihren Kolleginnen und Kollegen dafür, dass sie nach Marokko gekommen sind und uns am 8. November 2026 im Hotel Marriott Rabat ehrliche und detaillierte Informationen gegeben haben. Danke für die einladende Kultur, für die Offenheit gegenüber marokkanischen Studierenden und für die Bildungsqualität, die Centria in Nordeuropa vertritt. Diese Begegnung hat mir die Klarheit gegeben, Centria zu wählen und heute Finnland zu wählen.</p>
+<p>Ich habe einen sehr großen Ehrgeiz, meine Ausbildung und meine Kreativität an Ihrer Hochschule fortzusetzen. Ich bitte Sie respektvoll, meine Bewerbung für den Bachelor of Engineering in Informationstechnik, Smart Devices and Solutions, über die UAS International Exam zu prüfen.</p>
+<p>Für weitere Unterlagen, Gespräche oder Tests stehe ich gern zur Verfügung.</p>
+<p>Mit freundlichen Grüßen<br><b>Rida Hamada</b><br>Safi, Marokko<br>E-Mail: Hamada.rida.321@proton.me</p>
+`;
+
+</script>
+<script>
+var T={
+en:{r6:"Letter",lt:"Full motivation letter",ol:"Open the original letter",ln:"The full letter in this language is being added. The complete English letter is shown below.",n:"English",d:"ltr",evl:"Event",bdl:"Candidate badge",kick:"Application · Rolling Admission 2027",h1:"Rida Hamada: Smart Devices and Solutions",lead:"B.Eng. Information Technology at Centria UAS, Kokkola, through the UAS International Exam.",intro:"I am an Electronics Technician for Automation Technology (IHK-FOSA) from Safi, Morocco. After five years of industrial work, I want to become an engineer who designs intelligent connected systems. I met the Centria team in Rabat on 8 November 2026, and that meeting is the reason for this application.",rt:"Explore my application",r1:"Questionnaire",r2:"Portfolio",r3:"Video",r4:"AI model",r5:"Enclosures",vt:"My video",at:"Achievements",a1:"Commissioned turbines and CHP plants for OCP Group, TAQA Morocco and STMicroelectronics.",a2:"Installed electrical systems up to 6.6 kV, tested 1–36 kV switchgear, integrated SCADA.",a3:"German recognition IHK-FOSA (2024) and Qualifizierungsplan IHK Berlin (2025).",a4:"Certificates: Cisco Cybersecurity, Microsoft Azure-900, IAEA, UNCTAD IMTS.",pt:"Recognition plan",p1:"ECTS at entry",p2:"ECTS expected through RPL",p3:"ECTS Bachelor, EQF 6",wt:"Why Centria and Finland",w:"Centria is practical: real projects, the IT Lab and cooperation with companies. My IHK plan points to digitalisation, data protection and information security, exactly what Smart Devices and Solutions teaches. I ask only for a fair evaluation and the chance to prove my value through my studies.",et:"Enclosures",dl:"Open the document folder",cl:"Thank you to Ms. Francesca Cucinotta and the Centria team. I am available for any document, interview or test."},
+fi:{r6:"Kirje",lt:"Koko motivaatiokirje",ol:"Avaa alkuperäinen kirje",ln:"Koko kirje tällä kielellä lisätään. Täydellinen englanninkielinen kirje näkyy alla.",n:"Suomi",d:"ltr",evl:"Tapahtuma",bdl:"Hakijan tunnus",kick:"Hakemus · Jatkuva haku 2027",h1:"Rida Hamada: Smart Devices and Solutions",lead:"tietotekniikan insinööri (AMK) Centriassa Kokkolassa, UAS International Exam -kokeen kautta.",intro:"Olen automaatiotekniikan elektroniikka-asentaja (IHK-FOSA) Safista, Marokosta. Viiden teollisuusvuoden jälkeen haluan insinööriksi, joka suunnittelee älykkäitä yhdistettyjä järjestelmiä. Tapasin Centrian edustajat Rabatissa 8. marraskuuta 2026, ja se tapaaminen on tämän hakemuksen syy.",rt:"Tutustu hakemukseeni",r1:"Kysely",r2:"Portfolio",r3:"Video",r4:"Tekoälymalli",r5:"Liitteet",vt:"Videoni",at:"Saavutukset",a1:"Turbiinien ja CHP-voimaloiden käyttöönotto: OCP Group, TAQA Morocco, STMicroelectronics.",a2:"Sähköjärjestelmien asennus 6,6 kV:iin asti, 1–36 kV kytkinlaitteiden testaus, SCADA-integrointi.",a3:"Saksalainen tunnustus IHK-FOSA (2024) ja Qualifizierungsplan IHK Berlin (2025).",a4:"Todistukset: Cisco Cybersecurity, Microsoft Azure-900, IAEA, UNCTAD IMTS.",pt:"Tunnustamissuunnitelma",p1:"op sisäänpääsyssä",p2:"op odotettavissa AHOT:n kautta",p3:"op, tradenomi/insinööri, EQF 6",wt:"Miksi Centria ja Suomi",w:"Centria on käytännönläheinen: oikeita projekteja, IT Lab ja yritysyhteistyö. IHK-suunnitelmani osoittaa digitalisaatiota, tietosuojaa ja tietoturvaa, joita Smart Devices and Solutions juuri opettaa. Pyydän vain oikeudenmukaista arviointia ja mahdollisuutta osoittaa osaamiseni opinnoissa.",et:"Liitteet",dl:"Avaa asiakirjakansio",cl:"Kiitos Francesca Cucinotta ja Centrian tiimi. Toimitan mielelläni lisäasiakirjoja sekä osallistun haastatteluun tai kokeeseen."},
+ar:{r6:"الرسالة",lt:"رسالة الدافع كاملة",ol:"افتح الرسالة الأصلية",ln:"الترجمة الكاملة بهذه اللغة قيد الإضافة. الرسالة الإنجليزية الكاملة معروضة أدناه.",n:"العربية",d:"rtl",evl:"الحدث",bdl:"رمز بطاقة المرشح",kick:"طلب الالتحاق · القبول المستمر 2027",h1:"رضا حمادة: Smart Devices and Solutions",lead:"بكالوريوس الهندسة في تكنولوجيا المعلومات بجامعة Centria للعلوم التطبيقية في كوكولا، عبر امتحان UAS الدولي.",intro:"أنا تقني إلكترونيات في تقنية الأتمتة (معترف به من IHK-FOSA) من آسفي بالمغرب. بعد خمس سنوات من العمل الصناعي أريد أن أصبح مهندساً يصمم أنظمة ذكية مترابطة. التقيت فريق Centria في الرباط يوم 8 نوفمبر 2026، وذلك اللقاء هو سبب هذا الطلب.",rt:"استكشف طلبي",r1:"الاستبيان",r2:"المحفظة",r3:"الفيديو",r4:"نموذج الذكاء",r5:"المرفقات",vt:"الفيديو الخاص بي",at:"الإنجازات",a1:"تشغيل التوربينات ومحطات التوليد المشترك لمجموعة OCP وTAQA المغرب وSTMicroelectronics.",a2:"تركيب أنظمة كهربائية حتى 6.6 كيلوفولت، واختبار مفاتيح 1–36 كيلوفولت، ودمج أنظمة SCADA.",a3:"اعتراف ألماني IHK-FOSA (2024) وخطة التأهيل Qualifizierungsplan من IHK برلين (2025).",a4:"شهادات: Cisco للأمن السيبراني، Microsoft Azure-900، IAEA، UNCTAD IMTS.",pt:"خطة الاعتراف",p1:"وحدة ECTS عند القبول",p2:"وحدة ECTS متوقعة عبر الاعتراف بالتعلم السابق",p3:"وحدة ECTS للبكالوريوس، EQF 6",wt:"لماذا Centria وفنلندا",w:"Centria جامعة عملية: مشاريع حقيقية، ومختبر IT Lab، وتعاون مع الشركات. خطتي من IHK تشير إلى الرقمنة وحماية البيانات وأمن المعلومات، وهذا بالضبط ما يدرّسه برنامج Smart Devices and Solutions. أطلب فقط تقييماً عادلاً وفرصة لإثبات قيمتي من خلال دراستي.",et:"المرفقات",dl:"افتح مجلد الوثائق",cl:"شكراً للسيدة Francesca Cucinotta وفريق Centria. أنا جاهز لتقديم أي وثيقة أو إجراء أي مقابلة أو اختبار."},
+fr:{r6:"Lettre",lt:"Lettre de motivation complète",ol:"Ouvrir la lettre originale",ln:"La lettre complète dans cette langue est en cours d'ajout. La lettre anglaise complète est affichée ci-dessous.",n:"Français",d:"ltr",evl:"Événement",bdl:"Badge candidat",kick:"Candidature · Admission continue 2027",h1:"Rida Hamada : Smart Devices and Solutions",lead:"Bachelor of Engineering en informatique à Centria UAS, Kokkola, via l'examen international UAS.",intro:"Je suis technicien en électronique pour la technique d'automatisation (IHK-FOSA), originaire de Safi, au Maroc. Après cinq ans de travail industriel, je veux devenir ingénieur et concevoir des systèmes intelligents connectés. J'ai rencontré l'équipe de Centria à Rabat le 8 novembre 2026, et cette rencontre est la raison de cette candidature.",rt:"Découvrir ma candidature",r1:"Questionnaire",r2:"Portfolio",r3:"Vidéo",r4:"Modèle IA",r5:"Annexes",vt:"Ma vidéo",at:"Réalisations",a1:"Mise en service de turbines et de centrales de cogénération pour OCP Group, TAQA Morocco et STMicroelectronics.",a2:"Installation de systèmes électriques jusqu'à 6,6 kV, essais d'appareillage 1–36 kV, intégration SCADA.",a3:"Reconnaissance allemande IHK-FOSA (2024) et Qualifizierungsplan IHK Berlin (2025).",a4:"Certificats : Cisco Cybersecurity, Microsoft Azure-900, AIEA, UNCTAD IMTS.",pt:"Plan de reconnaissance",p1:"ECTS à l'entrée",p2:"ECTS attendus via la RPL",p3:"ECTS du Bachelor, EQF 6",wt:"Pourquoi Centria et la Finlande",w:"Centria est pratique : de vrais projets, l'IT Lab et la coopération avec les entreprises. Mon plan IHK pointe la digitalisation, la protection des données et la sécurité de l'information, exactement ce qu'enseigne Smart Devices and Solutions. Je demande seulement une évaluation équitable et la chance de prouver ma valeur par mes études.",et:"Annexes",dl:"Ouvrir le dossier de documents",cl:"Merci à Mme Francesca Cucinotta et à l'équipe de Centria. Je reste disponible pour tout document, entretien ou test."},
+sv:{r6:"Brev",lt:"Hela motivationsbrevet",ol:"Öppna originalbrevet",ln:"Hela brevet på detta språk läggs till. Det kompletta engelska brevet visas nedan.",n:"Svenska",d:"ltr",evl:"Evenemang",bdl:"Kandidatbricka",kick:"Ansökan · Löpande antagning 2027",h1:"Rida Hamada: Smart Devices and Solutions",lead:"Ingenjör (YH) i informationsteknik vid Centria UAS i Kokkola, via UAS International Exam.",intro:"Jag är elektroniktekniker inom automationsteknik (IHK-FOSA) från Safi i Marocko. Efter fem år i industrin vill jag bli ingenjör som utformar intelligenta, uppkopplade system. Jag träffade Centrias team i Rabat den 8 november 2026, och det mötet är anledningen till ansökan.",rt:"Utforska min ansökan",r1:"Enkät",r2:"Portfölj",r3:"Video",r4:"AI-modell",r5:"Bilagor",vt:"Min video",at:"Meriter",a1:"Driftsättning av turbiner och kraftvärmeverk för OCP Group, TAQA Morocco och STMicroelectronics.",a2:"Installation av elsystem upp till 6,6 kV, test av 1–36 kV ställverk, SCADA-integration.",a3:"Tyskt erkännande IHK-FOSA (2024) och Qualifizierungsplan IHK Berlin (2025).",a4:"Intyg: Cisco Cybersecurity, Microsoft Azure-900, IAEA, UNCTAD IMTS.",pt:"Erkännandeplan",p1:"hp vid antagning",p2:"hp väntas via validering",p3:"hp kandidatexamen, EQF 6",wt:"Varför Centria och Finland",w:"Centria är praktiskt: verkliga projekt, IT Lab och samarbete med företag. Min IHK-plan pekar på digitalisering, dataskydd och informationssäkerhet, precis vad Smart Devices and Solutions undervisar i. Jag ber bara om en rättvis bedömning och chansen att bevisa mitt värde genom mina studier.",et:"Bilagor",dl:"Öppna dokumentmappen",cl:"Tack till Francesca Cucinotta och Centrias team. Jag står till förfogande för alla dokument, intervjuer eller prov."},
+de:{r6:"Brief",lt:"Vollständiges Motivationsschreiben",ol:"Originalbrief öffnen",ln:"Der vollständige Brief in dieser Sprache wird ergänzt. Der komplette englische Brief steht unten.",n:"Deutsch",d:"ltr",evl:"Veranstaltung",bdl:"Bewerber-Badge",kick:"Bewerbung · Laufende Zulassung 2027",h1:"Rida Hamada: Smart Devices and Solutions",lead:"Bachelor of Engineering Informationstechnik an der Centria UAS in Kokkola, über die UAS International Exam.",intro:"Ich bin Elektroniker für Automatisierungstechnik (IHK-FOSA) aus Safi, Marokko. Nach fünf Jahren Industrieerfahrung möchte ich Ingenieur werden und intelligente vernetzte Systeme entwickeln. Ich habe das Centria-Team am 8. November 2026 in Rabat getroffen, und dieses Treffen ist der Grund für diese Bewerbung.",rt:"Meine Bewerbung entdecken",r1:"Fragebogen",r2:"Portfolio",r3:"Video",r4:"KI-Modell",r5:"Anlagen",vt:"Mein Video",at:"Erfolge",a1:"Inbetriebnahme von Turbinen und BHKW für OCP Group, TAQA Morocco und STMicroelectronics.",a2:"Elektroinstallation bis 6,6 kV, Prüfung von 1–36 kV Schaltanlagen, SCADA-Integration.",a3:"Deutsche Anerkennung IHK-FOSA (2024) und Qualifizierungsplan IHK Berlin (2025).",a4:"Zertifikate: Cisco Cybersecurity, Microsoft Azure-900, IAEA, UNCTAD IMTS.",pt:"Anerkennungsplan",p1:"ECTS bei Studienbeginn",p2:"ECTS erwartet über RPL",p3:"ECTS Bachelor, EQF 6",wt:"Warum Centria und Finnland",w:"Centria ist praxisnah: echte Projekte, das IT Lab und Zusammenarbeit mit Unternehmen. Mein IHK-Plan nennt Digitalisierung, Datenschutz und Informationssicherheit, genau das lehrt Smart Devices and Solutions. Ich bitte nur um eine faire Prüfung und die Chance, mich im Studium zu beweisen.",et:"Anlagen",dl:"Dokumentenordner öffnen",cl:"Vielen Dank an Frau Francesca Cucinotta und das Centria-Team. Für Unterlagen, Gespräche oder Tests stehe ich gern bereit."}
+};
+T.fi.lead="Tietotekniikan insinööri (AMK) Centriassa Kokkolassa, UAS International Exam -kokeen kautta.";
+T.fi.p3="op, insinööri (AMK), EQF 6";
+var R=[["r1","📝","https://ridahd123.github.io/HAMADA-RIDA---Study-in-Europe-Fair-Morocco---8th-November-2026-University-Evaluation-Platform/"],
+["r2","💼","https://ridahd123.github.io/rida-Hamada-Elektroniker-fuer--Automatisierungstechnik-2029/"],
+["r3","▶️","https://youtu.be/_OOk257t5rY"],
+["r4","🤖","https://www.linkedin.com/posts/hamada-rida-pmp%C2%AE-pspo%C2%AE-open-to-work-a70522215_cybersecurity-privacyfirst-digitalsovereignty-ugcPost-7398112270146347008-iTOI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZcQXQBFWYaXuRtRDZiRAqAzx-nRk3Pr9o"],
+["r5","📎","#encl"],
+["r6","✉️","https://drive.google.com/file/d/1Xvm3dc4SAlpZl2O5bSrBT_5z31p-Zu4X/view?usp=drive_link"]];
+var ring=document.getElementById("ring"),nodes={};
+R.forEach(function(r,i){
+  var a=document.createElement("a"),ang=(i*60-90)*Math.PI/180;
+  a.className="node";a.href=r[2];
+  if(r[2].charAt(0)!=="#"){a.target="_blank";a.rel="noopener"}
+  a.style.left=(50+38*Math.cos(ang))+"%";a.style.top=(50+38*Math.sin(ang))+"%";
+  a.innerHTML="<span>"+r[1]+"</span><i style='font-style:normal'></i>";
+  ring.appendChild(a);nodes[r[0]]=a.lastChild;
+});
+var box=document.getElementById("langs");
+window.LETTER=window.LETTER||{};
+var HAS={en:1,fi:1,ar:1,fr:1,sv:1,de:1};
+function showLetter(l){
+  var t=T[l]||T.en;
+  function put(){var ok=window.LETTER[l];document.getElementById("lbody").innerHTML=window.LETTER[l]||window.LETTER.en||"";document.getElementById("lnote").textContent=ok?"":t.ln}
+  if(window.LETTER[l]||!HAS[l]){put();return}
+  var sc=document.createElement("script");sc.src="letter-"+l+".js";sc.onload=put;sc.onerror=put;document.head.appendChild(sc);
+}
+function setLang(l){
+  var t=T[l]||T.en;
+  document.documentElement.lang=l;document.documentElement.dir=t.d;
+  document.querySelectorAll("[data-i]").forEach(function(e){var v=t[e.getAttribute("data-i")];if(v)e.textContent=v});
+  for(var k in nodes)nodes[k].textContent=t[k];
+  document.title="Rida Hamada – Centria UAS – Smart Devices and Solutions 2027";
+  showLetter(l);
+  box.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+["fi","ar","fr","en","sv","de"].forEach(function(l){
+  var b=document.createElement("button");b.type="button";b.dataset.l=l;b.textContent=T[l].n;
+  b.addEventListener("click",function(){setLang(l)});box.appendChild(b);
+});
+var s="en";try{s=localStorage.getItem("lang")||"en"}catch(e){}
+setLang(T[s]?s:"en");
+</script>
+</body>
+</html>
