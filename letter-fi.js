@@ -1,7 +1,7 @@
 window.LETTER=window.LETTER||{};
 window.LETTER.fi=`
 <p><b>Motivaatiokirje</b><br>Rida Hamada<br>Koulutusohjelma: tietotekniikan insinööri (AMK) – Smart Devices and Solutions (SDS)<br>Centria-ammattikorkeakoulu, Kokkola<br>Koskee: yhteishaku / jatkuva haku 2027</p>
-<p>Hyvä Centrian opiskelijavalinta- ja kansainvälisten asioiden tiimi,</p>
+<p>Hyvä rouva Helena Korpela (Expert for Education Export) sekä Centrian opiskelijavalinta- ja kansainvälisten asioiden tiimi,</p>
 <p>Nimeni on Rida Hamada. Olen marokkolainen automaatiotekniikan elektroniikka-asentaja, jonka pätevyyden IHK-FOSA on tunnustanut Saksassa. Haen tietotekniikan insinööriopintoihin (Bachelor of Engineering), Smart Devices and Solutions -suuntautumiseen, jotka alkavat syksyllä 2027.</p>
 <p>Tapasin valtuuskuntanne henkilökohtaisesti Marokossa, ja tuo tapaaminen on tämän kirjeen syy.</p>
 <p>8. marraskuuta 2026 osallistuin Hotel Marriott Rabatissa Centrian esitykseen Marokossa. Sain kuunnella Francesca Cucinottaa, Centrian kansainvälisten asioiden johtajaa, ja hänen kollegoitaan. Haluan kiittää heitä vilpittömästi selkeästä, rehellisestä ja erittäin käytännöllisestä tiedosta, jota he antoivat opiskelusta Kokkolassa, lukukausimaksuista, stipendeistä, opiskelijaelämästä ja siitä, mitä Centria todella odottaa kansainvälisiltä opiskelijoilta.</p>
@@ -87,7 +87,7 @@ window.LETTER.fi=`
 </ul>
 <p>Olen valmis asumaan Kokkolassa, opiskelemaan kokopäiväisesti, suorittamaan 60 op vuodessa ja integroitumaan suomalaiseen akateemiseen ja ammatilliseen elämään.</p>
 <h3>Lopuksi</h3>
-<p>Kiitän vielä kerran rouva Francesca Cucinottaa ja hänen kollegoitaan siitä, että tulitte Marokkoon ja annoitte meille rehellistä ja yksityiskohtaista tietoa Hotel Marriott Rabatissa 8. marraskuuta 2026. Kiitos lämpimästä kulttuurista, avoimesta asenteesta marokkolaisia opiskelijoita kohtaan ja koulutuksen laadusta, jota Centria edustaa Pohjois-Euroopassa. Tuo tapaaminen antoi minulle selkeyden valita Centria ja valita tänään Suomi.</p>
+<p>Kiitän vielä kerran rouva Francesca Cucinottaa ja hänen kollegoitaan siitä, että tulitte Marokkoon ja annoitte meille rehellistä ja yksityiskohtaista tietoa Hotel Marriott Rabatissa 8. marraskuuta 2026. Kiitos lämpimästä kulttuurista, avoimesta asenteesta marokkolaisia opiskelijoita kohtaan ja koulutuksen laadusta, jota Centria edustaa Pohjois-Euroopassa. Tuo tapaaminen antoi minulle selkeyden valita Centria ja valita tänään Suomi. Kiitän myös rouva Helena Korpelaa, Expert for Education Export, Centria University of Applied Sciences, sekä koko Centrian tiimiä hakemukseeni käytetystä ajasta.</p>
 <p>Minulla on erittäin suuri kunnianhimo jatkaa opintojani ja luovuuttani korkeakoulussanne. Pyydän kunnioittavasti, että käsittelette hakemukseni tietotekniikan insinööriopintoihin, Smart Devices and Solutions, UAS International Exam -kokeen kautta.</p>
 <p>Olen käytettävissä kaikkien lisäasiakirjojen, haastattelujen tai kokeiden osalta.</p>
 <p>Kunnioittavasti,<br><b>Rida Hamada</b><br>Safi, Marokko<br>Sähköposti: Hamada.rida.321@proton.me</p>

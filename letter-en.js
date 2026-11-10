@@ -1,7 +1,7 @@
 window.LETTER=window.LETTER||{};
 window.LETTER.en=`
 <p><b>Motivaatiokirje – Motivation Letter</b><br>Rida Hamada<br>Programme: Bachelor of Engineering, Information Technology – Smart Devices and Solutions (SDS)<br>Centria University of Applied Sciences, Kokkola<br>For: Joint Application / Rolling Admission 2027</p>
-<p>Dear Admissions Team and International Affairs Team at Centria University of Applied Sciences,</p>
+<p>Dear Ms. Helena Korpela (Expert for Education Export), Admissions Team and International Affairs Team at Centria University of Applied Sciences,</p>
 <p>My name is Rida Hamada. I am a Moroccan Electronics Technician for Automation Technology, recognized by IHK-FOSA in Germany, and I am writing to apply for the Bachelor of Engineering in Information Technology, specialization Smart Devices and Solutions, starting in autumn 2027.</p>
 <p>I met your delegation in person in Morocco, and that meeting is the reason for this letter.</p>
 <p>On 08 November 2026, at Hotel Marriott Rabat, I attended the Centria presentation in Morocco. I had the opportunity to listen to Ms. Francesca Cucinotta, Director, International Affairs at Centria University of Applied Sciences, and her colleagues. I would like to thank them sincerely for the clear, honest, and very practical information they gave us about studying in Kokkola, about tuition fees, scholarships, student life, and about what Centria really expects from international students.</p>
@@ -87,7 +87,7 @@ window.LETTER.en=`
 </ul>
 <p>I am ready to stay in Kokkola, to study full-time, to complete 60 ECTS per year, and to integrate into Finnish academic and professional life.</p>
 <h3>Closing</h3>
-<p>Thank you again to Ms. Francesca Cucinotta and her colleagues for coming to Morocco and for giving us honest and detailed information at Hotel Marriott Rabat on 08 November 2026. Thank you for the welcoming culture, for the open mindset towards Moroccan students, and for the quality of education that Centria represents in Northern Europe. That meeting gave me the clarity to choose Centria, and to choose Finland today.</p>
+<p>Thank you again to Ms. Francesca Cucinotta and her colleagues for coming to Morocco and for giving us honest and detailed information at Hotel Marriott Rabat on 08 November 2026. Thank you for the welcoming culture, for the open mindset towards Moroccan students, and for the quality of education that Centria represents in Northern Europe. That meeting gave me the clarity to choose Centria, and to choose Finland today. I also thank Ms. Helena Korpela, Expert for Education Export at Centria University of Applied Sciences, and the whole Centria team for the time they give to my application.</p>
 <p>I have a very big ambition to continue my education and my creativity at your university. I respectfully ask you to consider my application for the Bachelor of Engineering in Information Technology, Smart Devices and Solutions, through the UAS International Exam.</p>
 <p>I am available for any additional document, interview, or test you may require.</p>
 <p>Yours sincerely,<br><b>Rida Hamada</b><br>Safi, Morocco<br>Email: Hamada.rida.321@proton.me</p>

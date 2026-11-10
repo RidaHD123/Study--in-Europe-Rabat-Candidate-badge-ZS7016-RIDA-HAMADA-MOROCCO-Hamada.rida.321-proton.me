@@ -1,7 +1,7 @@
 window.LETTER=window.LETTER||{};
 window.LETTER.de=`
 <p><b>Motivationsschreiben – Motivaatiokirje</b><br>Rida Hamada<br>Studiengang: Bachelor of Engineering, Informationstechnik – Smart Devices and Solutions (SDS)<br>Centria University of Applied Sciences, Kokkola<br>Betreff: Gemeinsame Bewerbung / laufende Zulassung 2027</p>
-<p>Sehr geehrtes Zulassungsteam, sehr geehrtes Team für Internationale Angelegenheiten der Centria University of Applied Sciences,</p>
+<p>Sehr geehrte Frau Helena Korpela (Expert for Education Export), sehr geehrtes Zulassungsteam, sehr geehrtes Team für Internationale Angelegenheiten der Centria University of Applied Sciences,</p>
 <p>mein Name ist Rida Hamada. Ich bin marokkanischer Elektroniker für Automatisierungstechnik, von der IHK-FOSA in Deutschland anerkannt, und bewerbe mich für den Bachelor of Engineering in Informationstechnik, Vertiefung Smart Devices and Solutions, mit Beginn im Herbst 2027.</p>
 <p>Ich habe Ihre Delegation persönlich in Marokko getroffen, und diese Begegnung ist der Grund für dieses Schreiben.</p>
 <p>Am 8. November 2026 habe ich im Hotel Marriott Rabat die Präsentation von Centria in Marokko besucht. Ich hatte die Gelegenheit, Frau Francesca Cucinotta, Director, International Affairs der Centria University of Applied Sciences, und ihren Kolleginnen und Kollegen zuzuhören. Ich danke ihnen aufrichtig für die klaren, ehrlichen und sehr praktischen Informationen über das Studium in Kokkola, über Studiengebühren, Stipendien, das Studentenleben und darüber, was Centria von internationalen Studierenden wirklich erwartet.</p>
@@ -87,7 +87,7 @@ window.LETTER.de=`
 </ul>
 <p>Ich bin bereit, in Kokkola zu bleiben, in Vollzeit zu studieren, jährlich 60 ECTS abzuschließen und mich in das finnische akademische und berufliche Leben zu integrieren.</p>
 <h3>Schluss</h3>
-<p>Ich danke nochmals Frau Francesca Cucinotta und ihren Kolleginnen und Kollegen dafür, dass sie nach Marokko gekommen sind und uns am 8. November 2026 im Hotel Marriott Rabat ehrliche und detaillierte Informationen gegeben haben. Danke für die einladende Kultur, für die Offenheit gegenüber marokkanischen Studierenden und für die Bildungsqualität, die Centria in Nordeuropa vertritt. Diese Begegnung hat mir die Klarheit gegeben, Centria zu wählen und heute Finnland zu wählen.</p>
+<p>Ich danke nochmals Frau Francesca Cucinotta und ihren Kolleginnen und Kollegen dafür, dass sie nach Marokko gekommen sind und uns am 8. November 2026 im Hotel Marriott Rabat ehrliche und detaillierte Informationen gegeben haben. Danke für die einladende Kultur, für die Offenheit gegenüber marokkanischen Studierenden und für die Bildungsqualität, die Centria in Nordeuropa vertritt. Diese Begegnung hat mir die Klarheit gegeben, Centria zu wählen und heute Finnland zu wählen. Ebenso danke ich Frau Helena Korpela, Expert for Education Export an der Centria University of Applied Sciences, und dem gesamten Centria-Team für die Zeit, die sie meiner Bewerbung widmen.</p>
 <p>Ich habe einen sehr großen Ehrgeiz, meine Ausbildung und meine Kreativität an Ihrer Hochschule fortzusetzen. Ich bitte Sie respektvoll, meine Bewerbung für den Bachelor of Engineering in Informationstechnik, Smart Devices and Solutions, über die UAS International Exam zu prüfen.</p>
 <p>Für weitere Unterlagen, Gespräche oder Tests stehe ich gern zur Verfügung.</p>
 <p>Mit freundlichen Grüßen<br><b>Rida Hamada</b><br>Safi, Marokko<br>E-Mail: Hamada.rida.321@proton.me</p>
